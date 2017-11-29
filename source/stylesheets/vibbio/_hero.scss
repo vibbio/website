@@ -18,12 +18,13 @@
     margin-bottom: 5vh;
     width: 10rem;
     transition: all $base-duration $base-timing;
- 
+     
     &:hover {
       transform: scale(1.1, 1.1);
     }
-    &:hover circle {
-      animation: pop 200ms ease-in-out 1 both;
+    &:hover g circle {
+      fill-opacity: 1;
+      stroke: $turquoise;
     }
   }
   h1 {
@@ -48,10 +49,11 @@
 
 @keyframes pop {
   0% {
-    fill: none;
+    fill-opacity: 0;
   }
   100% {
     fill: $turquoise;
+    fill-opacity: 1;
     stroke: $turquoise;
   }
 }
