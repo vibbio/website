@@ -1,0 +1,12 @@
+.customer-logos {
+    padding: modular-scale(5) 0px;
+    background-color: $light-turquoise;
+
+    // this needs to be replaced with proper logos as SVGs
+    img {
+        margin: modular-scale(3) auto 0 auto;
+        width: 90%;
+        display: block;
+        filter: invert(50%) hue-rotate(193deg);
+    }
+}
