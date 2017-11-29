@@ -1,24 +1,63 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
+@import "base/base.scss";
 
-a {
-  color: rgba(#000, 0.7);
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: $heading-font-family;
+  font-size: 0.65rem;
+  font-weight: bold;
+  justify-content: space-between;
+  left: 0;
+  letter-spacing: .15em;
+  margin: 1rem 2rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: calc(100% - 4rem);
+
+  img {
+    height: 2rem;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    padding-left: 1rem;
+    a {
+      border: 1px solid transparent;
+      color: $white;
+      padding-bottom: .5em;
+      text-decoration: none;
+      transition: border $base-duration $base-timing;
+      &:hover {
+        border-bottom-color: $white;
+      }
+    }
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.hero {
+  background-color: $turquoise;
+  background-image: url(../images/banner_2.jpg);
+  background-size: cover;
+  color: $white;
+  height: 100vh;
+  text-align: center;
+  img {
+    height: 20vh;
+    width: 20vh;
+  }
+  h1 {
+    font-size: 3.25rem;
+
+  }
+  p {
+    font-size: 1.25rem;
+    text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
+  }
 }
