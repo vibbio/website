@@ -1,6 +1,9 @@
 // Typography
 $base-font-family: 'Muli', sans-serif;
+$base-font-weight: 400;
 $heading-font-family: 'Montserrat', sans-serif;
+$heading-font-weight: 700;
+$modular-scale-ratio: $augmented-fourth;
 
 // Line height
 $base-line-height: 1.5;
@@ -23,6 +26,7 @@ $dark-anthracite: #141d28;
 
 // Font Colors
 $base-font-color: $dark-anthracite;
+$heading-font-color: $dark-petroleum;
 $action-color: $turquoise;
 
 // Border
