@@ -8,16 +8,12 @@ nav {
   justify-content: space-between;
   left: 0;
   letter-spacing: .15em;
-  margin: 1rem 2rem;
+  margin: 2rem 4rem;
   position: absolute;
   text-transform: uppercase;
   top: 0;
-  width: calc(100% - 4rem);
+  width: calc(100% - 8rem);
   z-index: 99;
-
-  img {
-    height: 2rem;
-  }
 
   ul {
     align-items: center;
@@ -25,7 +21,7 @@ nav {
     justify-content: flex-end;
   }
   li {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     a {
       border: 1px solid transparent;
       color: $white;
