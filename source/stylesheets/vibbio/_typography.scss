@@ -1,0 +1,9 @@
+.section-heading {
+    text-transform: uppercase;
+    font-size: modular-scale(-1);
+    letter-spacing: .2em;
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    color: $heading-font-color;
+    text-align: center;
+}
