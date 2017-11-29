@@ -1,45 +1,5 @@
 @import "base/base.scss";
-
-
-nav {
-  align-items: center;
-  display: flex;
-  flex-wrap: nowrap;
-  font-family: $heading-font-family;
-  font-size: 0.65rem;
-  font-weight: bold;
-  justify-content: space-between;
-  left: 0;
-  letter-spacing: .15em;
-  margin: 1rem 2rem;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-  width: calc(100% - 4rem);
-
-  img {
-    height: 2rem;
-  }
-
-  ul {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-  }
-  li {
-    padding-left: 1rem;
-    a {
-      border: 1px solid transparent;
-      color: $white;
-      padding-bottom: .5em;
-      text-decoration: none;
-      transition: border $base-duration $base-timing;
-      &:hover {
-        border-bottom-color: $white;
-      }
-    }
-  }
-}
+@import "vibbio/vibbio.scss";
 
 .hero {
   background-color: $turquoise;
