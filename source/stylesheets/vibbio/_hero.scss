@@ -1,0 +1,69 @@
+.hero {
+  align-items: center;
+  background-color: $turquoise;
+  background-image: url(../images/banner_2.jpg);
+  background-size: cover;
+  border-bottom: 2px solid $white;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  min-height: 640px;
+  position: relative;
+  text-align: center;
+  svg {
+    cursor: pointer;
+    height: 10rem;
+    margin-bottom: 5vh;
+    width: 10rem;
+    transition: all $base-duration $base-timing;
+ 
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+    &:hover circle {
+      animation: pop 200ms ease-in-out 1 both;
+    }
+  }
+  h1 {
+    font-size: 3.25rem;
+  }
+  p {
+    font-size: 1.25rem;
+    max-width: 27em;
+    text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
+  }
+  .half-circle {
+    background-color: $white;
+    border-radius: 50%;
+    bottom: -2rem;
+    height: 4rem;
+    left: calc(50% - 2rem);
+    position: absolute;
+    width: 4rem;
+    animation: bounce 3s ease-in-out infinite;
+  }
+}
+
+@keyframes pop {
+  0% {
+    fill: none;
+  }
+  100% {
+    fill: $turquoise;
+    stroke: $turquoise;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0)
+  }
+  50% {
+    transform: translate3d(0, 1rem, 0)
+  }
+  100% {
+    transform: translate3d(0, 0, 0)
+  }
+}
