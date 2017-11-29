@@ -1,0 +1,77 @@
+footer {
+    background-color: $dark-anthracite;
+    color: transparentize($white, 0.4);
+    font-family: $heading-font-family;
+    font-size: modular-scale(-1);
+    padding: 3.5rem 4rem 2rem;
+
+    a {
+        color: $white;
+        opacity: .6;
+        text-decoration: none;
+        transition: opacity $base-duration $base-timing;
+        &:hover {
+            color: $white;
+            opacity: 1;
+        }
+    }
+
+    main {
+        display: grid;
+        grid-gap: 2.5rem;
+        grid-template-columns: 1fr 2fr 10rem;
+        margin-bottom: 1rem;
+    }
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .links {
+        align-content: flex-start;
+        display: flex;
+        justify-content: space-evenly;
+        li {
+            padding-bottom: 1em;
+        }
+    }
+
+    h2 {
+        font-size: modular-scale(0);
+        font-weight: $base-font-weight;
+        padding-bottom: .5rem;
+    }
+
+    .social-icons {
+        align-content: center;
+        display: flex;
+        justify-content: space-between;
+        a img {
+            opacity: .5;
+            transition: opacity $base-duration $base-timing;
+        }
+        a:hover img {
+            opacity: .8;
+        }
+
+        img {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    aside {
+        align-content: center;
+        border-top: $base-border;
+        display: flex;
+        justify-content: space-between;
+        padding: modular-scale(1) 0;
+
+        ul {
+            display: flex;
+        }
+        li:first-child::after {
+                content: '/';
+                padding: 0 1em;
+        }
+    }
+}
