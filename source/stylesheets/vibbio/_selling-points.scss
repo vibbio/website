@@ -1,0 +1,93 @@
+.selling-points {
+    display: grid;
+    grid-row-gap: .5rem;
+    grid-column-gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: modular-scale(6) 4rem;
+
+    h2 {
+        font-size: modular-scale(3);
+        color: $dark-petroleum;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    img {
+        display: block; 
+        height: 6.25rem;
+        margin: 2rem auto;
+        width: 6.25rem;
+    }
+    
+    h3 {
+        @extend .section-heading;
+    }
+    h3:nth-of-type(1) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    h3:nth-of-type(2) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    h3:nth-of-type(3) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    p:nth-of-type(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    p:nth-of-type(4) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    p:nth-of-type(6) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    p {
+        margin: 0 auto;
+        max-width: 12.5em;
+        text-align: center;
+    }
+
+    p:first-of-type {
+        font-size: modular-scale(1);
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 auto modular-scale(3);
+        max-width: 27em;
+        text-align: center;
+    }
+
+    p:last-of-type {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: modular-scale(4) auto 0;
+    }
+    
+    a {
+        @extend .vibbio-bare-button;
+        background-color: $action-color;
+        color: $white;
+        &:hover {
+            background-color: $petroleum;
+        }
+    }
+}
