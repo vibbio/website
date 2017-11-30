@@ -1,15 +1,4 @@
-.vibbio-bare-button {
-    border-radius: 2.5em;
-    border: none;
-    font-family: $heading-font-family;
-    padding: 1.5em 2.5em;
-    transition: all $base-duration $base-timing;
-    font-size: 0.65rem;
-    font-weight: bold;
-    letter-spacing: .15em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+@import "base";
 
 @import "navigation";
 @import "footer";
