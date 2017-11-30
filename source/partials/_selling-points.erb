@@ -1,3 +1,33 @@
 <div class="selling-points">
-    <%= partial 'page-content/home/selling-points.md.erb' %>
+    <h2>So Intutive, So Easy!</h2>
+
+    <p class="ingress">Video, marketing, affordable, for all, all the time. Or something!</p>
+
+    <div class="points">
+        <div class="point">
+
+            <%= image_tag 'Vibbio.symbol.png', :alt => "Icon first selling point" %>
+            
+            <h3>Flexible</h3>
+            <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+        </div>
+        <div class="point">
+
+            <%= image_tag 'Vibbio.symbol.png', :alt => "Icon second selling point" %>
+            
+            <h3>Fast</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        </div>
+        <div class="point">
+
+            <%= image_tag 'Vibbio.symbol.png', :alt => "Icon third selling point" %>
+
+            <h3>Affordable</h3>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+        </div>
+    </div>
+    <%= link_to 'Get started free', '/plans.html' %>
 </div>
