@@ -7,6 +7,9 @@ end
 
 activate :livereload
 
+set :markdown_engine, :kramdown
+set :markdown, parse_block_html: true
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
