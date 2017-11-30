@@ -6,7 +6,7 @@
     padding: modular-scale(6) 4rem;
     
     h2 {
-        @extend h2;
+        @extend .h2;
     }
 
     .points {

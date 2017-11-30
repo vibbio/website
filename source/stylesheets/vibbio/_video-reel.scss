@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: center;
     padding: modular-scale(6) 4rem;
+
+    h2 {
+        @extend .h2 
+    }
     
     .videos {
         align-items: stretch;
