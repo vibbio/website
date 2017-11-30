@@ -10,6 +10,14 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.vibbio-primary-button {
+    @extend .vibbio-bare-button;
+    background-color: $turquoise;
+    color: $white;
+    &:hover {
+        background-color: $petroleum;
+    }
+}
 
 .measure {
     max-width: 30em;
