@@ -1,3 +1,9 @@
+h2 {
+    font-size: modular-scale(3);
+    color: $dark-petroleum;
+    text-align: center;
+}
+
 .section-heading {
     text-transform: uppercase;
     font-size: modular-scale(-1);
@@ -5,6 +11,14 @@
     font-family: $heading-font-family;
     font-weight: $heading-font-weight;
     color: $heading-font-color;
+    text-align: center;
+}
+
+.ingress {
+    color: $anthracite;
+    font-size: modular-scale(1);
+    margin: 0 auto modular-scale(3);
+    max-width: 27em;
     text-align: center;
 }
 

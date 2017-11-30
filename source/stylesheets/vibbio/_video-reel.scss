@@ -1,0 +1,54 @@
+.video-reel {
+    align-items: center;
+    background-color: $light-turquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: modular-scale(6) 4rem;
+    
+    .videos {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: modular-scale(3);
+    }
+    .single-video {
+        background-color: $white;
+        border-radius: $base-border-radius;
+        cursor: default;
+        overflow: hidden;
+        margin: 0 1rem 2rem 1rem;
+        min-width: 230px;
+        transition: box-shadow $base-duration $base-timing;
+        &:hover {
+            box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+        }
+    }
+    .caption {
+        padding: modular-scale(1);
+        margin: 0;
+        text-align: center;
+        font-size: modular-scale(-1);
+    }
+    .customer {
+        @extend .section-heading;
+        display: block;
+        font-size: modular-scale(0);
+        margin-bottom: 1em;
+    }
+    .date {
+        color: transparentize($base-font-color, 0.3);
+        display: block;
+        margin-top: .5em;
+    }
+    
+    a {
+        @extend .vibbio-bare-button;
+        background-color: $turquoise;
+        color: $white;
+        &:hover {
+            background-color: $petroleum;
+        }
+    }
+}
