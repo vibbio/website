@@ -1,0 +1,45 @@
+.quotes {
+    background-color: $light-turquoise;
+
+    .columns {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: modular-scale(3);
+        width: 100%;
+    }
+    
+    .single-quote{
+        padding: 0 2rem 2rem;
+    }
+
+    p {
+        max-width: 20em;
+        margin: 0;
+    }
+    .details {
+        display: flex;
+        padding: 1.5em 0 0 0;
+    }
+    .details img {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        float: left;
+        margin-right: 1rem;
+    }
+    span {
+        display: block;
+    }
+    .customer-name {
+        @extend .section-heading;
+        text-align: left;
+    }
+    .customer-title {
+        font-size: modular-scale(-1);
+        opacity: .5;
+        vertical-align: bottom;
+    }
+}
