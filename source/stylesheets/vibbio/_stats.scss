@@ -10,11 +10,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-bottom: modular-scale(4);
+        margin-bottom: modular-scale(3);
         width: 100%;
 
         & div {
-        margin: 0 2rem;
+        margin: 0 2rem modular-scale(2);
         }
     }
 
@@ -30,6 +30,7 @@
     p {
         max-width: 12em;
         text-align: center;
+        margin: 0 auto;
     }
     a {
         @extend .vibbio-primary-button;
