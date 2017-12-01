@@ -5,17 +5,23 @@
         align-items: flex-start;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         margin-top: modular-scale(3);
         width: 100%;
     }
     
-    .single-quote{
+    .single-quote {
         padding: 0 2rem 2rem;
+    }
+    .single-quote:first-child {
+        padding-left: 0;
+    }
+    .single-quote:last-child {
+        padding-right: 0;
     }
 
     p {
-        max-width: 20em;
+        max-width: 18em;
         margin: 0;
     }
     .details {
@@ -41,5 +47,19 @@
         font-size: modular-scale(-1);
         opacity: .5;
         vertical-align: bottom;
+    }
+    @media screen and (max-width: 1119px) {
+        .single-quote:last-child {
+            padding: 0 0 2rem 0;
+        }
+    }
+    @media screen and (max-width: 799px) {
+        .columns {
+            flex-direction: column;
+            align-items: center;
+        }
+        .single-quote {
+            padding: 0 0 2rem 0;
+        }
     }
 }
