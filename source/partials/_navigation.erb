@@ -1,4 +1,4 @@
-<nav>
+<nav class="desktop">
     <% link_to 'index.html' do %>
       <%= image_tag 'vibbio_white.svg', :class => 'logo' %>
     <% end %>
@@ -8,6 +8,24 @@
         <li><a href="">Plans</a></li>
         <li><a href="">Resources</a></li>
         <li><a href="">About us</a></li>
-        <li><a class="button" href="https://app.vibbio.com">Log in</a></li>
     </ul>
+    
+    <a class="menu-trigger" href="#">Menu</a>
+    <a class="button" href="https://app.vibbio.com">Log in</a>
 </nav>
+
+<div class="overlay">
+    <button type="button" class="close-overlay">Close</button>
+    
+    <nav class="mobile">
+        <ul>
+            <li><a href="">Product</a></li>
+            <li><a href="">Plans</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="https://app.vibbio.com">Log in</a></li>
+        </ul>
+    </nav>
+
+    
+</div>

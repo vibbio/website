@@ -1,39 +1,40 @@
-nav {
+nav.desktop {
   align-items: center;
   display: flex;
-  flex-wrap: nowrap;
   font-family: $heading-font-family;
   font-size: 0.65rem;
   font-weight: bold;
   justify-content: space-between;
   left: 0;
   letter-spacing: .15em;
-  margin: 2rem 4rem;
+  margin: 1rem 2rem;
   position: absolute;
   text-transform: uppercase;
   top: 0;
-  width: calc(100% - 8rem);
-  z-index: 99;
+  width: calc(100% - 4rem);
+  z-index: 1;
 
   ul {
     align-items: center;
-    display: flex;
+    display: none;
+    flex-grow: 2;
     justify-content: flex-end;
+    margin: 0 2rem;
   }
   li {
     padding-left: 1.5rem;
-    a {
-      border: 1px solid transparent;
-      color: $white;
-      padding-bottom: .5em;
-      text-decoration: none;
-      transition: border $base-duration $base-timing;
-      &:hover {
-        border-bottom-color: $white;
-        color: $white;
-      }
-    }
   }
+  a {
+    border: 1px solid transparent;
+    color: $white;
+    padding: .5em 0;
+    text-decoration: none;
+    transition: border $base-duration $base-timing;
+  }
+
+  .menu-trigger {
+    padding: 1rem 2rem;
+  } 
   .button {
     @extend .vibbio-bare-button;
     background-color: transparent;
@@ -42,5 +43,97 @@ nav {
       background-color: $white;
       color: $action-color;
     }
+  }
+}
+
+.overlay {
+  background-color: $dark-petroleum;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: visibility $base-duration $base-timing 400ms, opacity 400ms $base-timing;
+  visibility: hidden;
+  z-index: 2;
+
+  nav ul {
+    opacity: .4;
+    transform: translateY(70%) rotateX(55deg);
+    transition: transform 0.7s, opacity 400ms;
+  }
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility $base-duration $base-timing, opacity 400ms $base-timing 200ms;
+
+  nav ul {
+    opacity: 1;
+    transform: translate(0) rotateX(0deg);
+  }
+}
+
+.close-overlay {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: url(../../images/ic_close_white.svg) no-repeat center center;
+  text-indent: 200%;
+  overflow: hidden;
+  z-index: 99;
+}
+  
+nav.mobile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+nav.mobile ul {
+  font-family: $heading-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: modular-scale(2);
+  li {
+    margin: 1em 0;
+  }
+  li a {
+    color: $white;
+    text-decoration: none;
+    transition: none;
+  }
+}
+
+
+@media screen and (min-width: 750px) {
+
+  nav.desktop {
+    margin: 2rem 4rem;
+    width: calc(100% - 8rem);
+
+    ul {
+      display: flex;
+
+      li a:hover {
+      border-bottom-color: $white;
+      color: $white;
+      }
+    }
+    .menu-trigger {
+      display: none;
+    }
+  }
+  .overlay {
+    display: none;
   }
 }
