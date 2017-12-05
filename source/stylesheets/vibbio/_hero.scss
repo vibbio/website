@@ -12,30 +12,17 @@
   min-height: 640px;
   position: relative;
   text-align: center;
-  svg {
-    cursor: pointer;
-    height: 10rem;
-    margin-bottom: 5vh;
-    width: 10rem;
-    transition: all $base-duration $base-timing;
-     
-    &:hover {
-      transform: scale(1.1, 1.1);
-    }
-    &:hover g circle {
-      fill-opacity: 1;
-      stroke: $turquoise;
-    }
-  }
+
   h1 {
     font-size: modular-scale(4);
-    margin: 0 4rem;
+    margin: modular-scale(2) 4rem modular-scale(0);
   }
   p {
     font-size: 1.25rem;
     max-width: 27em;
     text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
   }
+
   .half-circle {
     background-color: $white;
     border-radius: 50%;
@@ -45,17 +32,6 @@
     position: absolute;
     width: 4rem;
     animation: bounce 3s ease-in-out infinite;
-  }
-}
-
-@keyframes pop {
-  0% {
-    fill-opacity: 0;
-  }
-  100% {
-    fill: $turquoise;
-    fill-opacity: 1;
-    stroke: $turquoise;
   }
 }
 
