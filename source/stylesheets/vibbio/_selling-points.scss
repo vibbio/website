@@ -42,7 +42,9 @@
         width: 50%;
 
         iframe {
+            background-color: $white;
             border-radius: $base-border-radius;
+            box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
             overflow: hidden;
         }
     }
@@ -70,6 +72,7 @@
     @media screen and (max-width: 900px) {
         main {
             flex-direction: column;
+            width: 100%;
         }
         .points, .video-embed {
             margin: 0;
@@ -79,6 +82,12 @@
         }
         .video-embed {
             margin-bottom: modular-scale(3);
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        .video-embed iframe {
+            height: 100%;
         }
     }
 }
