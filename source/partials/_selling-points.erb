@@ -1,33 +1,38 @@
-<div class="selling-points">
+<section class="selling-points">
     <h2>So Intutive, So Easy!</h2>
 
     <p class="ingress">Video, marketing, affordable, for all, all the time. Or something!</p>
-
-    <div class="points">
-        <div class="point">
-
-            <%= image_tag 'Vibbio.symbol.png', :alt => "Icon first selling point" %>
-            
-            <h3>Flexible</h3>
-            <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
+    
+    <main>    
+        <div class="video-embed">
+            <iframe src="https://player.vimeo.com/video/231544979?color=25cbd3&title=0&byline=0&portrait=0" width="400" height="224" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        <div class="point">
+        <div class="points">
+            <div class="point">
+                <%= image_tag 'Vibbio.symbol.png', :alt => "Icon first selling point" %>
+                <div class="point-inner">                
+                    <h3>Flexible</h3>
+                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
 
-            <%= image_tag 'Vibbio.symbol.png', :alt => "Icon second selling point" %>
-            
-            <h3>Fast</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
+            </div>
+            <div class="point">
+                <%= image_tag 'Vibbio.symbol.png', :alt => "Icon second selling point" %>
+                <div class="point-inner"> 
+                    <h3>Fast</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="point">
+                <%= image_tag 'Vibbio.symbol.png', :alt => "Icon third selling point" %>
+                <div class="point-inner">
+                    <h3>Affordable</h3>
+                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>                    
+                </div>
+            </div>
         </div>
-        <div class="point">
 
-            <%= image_tag 'Vibbio.symbol.png', :alt => "Icon third selling point" %>
+    </main>
 
-            <h3>Affordable</h3>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-        </div>
-    </div>
     <%= link_to 'Get started free', '/plans.html' %>
-</div>
+</section>

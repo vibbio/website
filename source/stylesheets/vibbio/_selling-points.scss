@@ -1,40 +1,61 @@
-.selling-points {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: modular-scale(6) 4rem;
+.selling-points {   
     
     h2 {
         @extend .h2;
     }
+    
+    main {
+        display: flex;
+        margin-bottom: modular-scale(4);
+        justify-content: center;
+        width: calc(100% - 8rem);
+    }
 
     .points {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: modular-scale(4);
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        margin-left: 2rem;
+        justify-content: space-evenly;
     }
     .point {
-        margin: 0 1rem;
+        align-items: flex-start;
+        display: flex;
+        margin: 0 0 1rem 0;
+    }
+    .point-inner {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
 
         p {
             margin: 0 auto;
-            max-width: 12.5em;
-            text-align: center;
+            max-width: 20em;
+        }
+    }
+    .video-embed {
+        margin-right: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+
+        iframe {
+            border-radius: $base-border-radius;
+            overflow: hidden;
         }
     }
 
     img {
         display: block; 
-        height: 6.25rem;
-        margin: 2rem auto;
-        width: 6.25rem;
+        height: 2rem;
+        width: 2rem;
     }
     
     h3 {
         @extend .section-heading;
+        text-align: left;
     }
 
     a {
@@ -43,6 +64,21 @@
         color: $white;
         &:hover {
             background-color: $petroleum;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        main {
+            flex-direction: column;
+        }
+        .points, .video-embed {
+            margin: 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-embed {
+            margin-bottom: modular-scale(3);
         }
     }
 }
