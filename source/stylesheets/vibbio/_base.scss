@@ -18,6 +18,15 @@
         background-color: $petroleum;
     }
 }
+.vibbio-inverted-button {
+    @extend .vibbio-bare-button;
+    background-color: $white;
+    color: $petroleum;
+    &:hover {
+        background-color: $turquoise;
+        color: $white;
+    }
+}
 
 .measure {
     max-width: 30em;
