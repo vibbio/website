@@ -4,14 +4,14 @@
     <% end %>
 
     <ul>
-        <li><a href="">Product</a></li>
-        <li><a href="">Plans</a></li>
-        <li><a href="">Resources</a></li>
-        <li><a href="">About us</a></li>
+        <li><%= link_to 'Product', 'product.html' %></li>
+        <li><%= link_to 'Plans', 'plans.html' %></li>
+        <li><%= link_to 'Resources', '#' %></li>
+        <li><%= link_to 'About', 'about.html' %></li>
     </ul>
     
-    <a class="menu-trigger" href="#">Menu</a>
-    <a class="button" href="https://app.vibbio.com">Log in</a>
+    <%= link_to 'Menu', '#', :class => 'menu-trigger' %>
+    <%= link_to 'Log in', 'https://app.vibbio.com' %>
 </nav>
 
 <div class="overlay">
@@ -19,11 +19,11 @@
     
     <nav class="mobile">
         <ul>
-            <li><a href="">Product</a></li>
-            <li><a href="">Plans</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="https://app.vibbio.com">Log in</a></li>
+            <li><%= link_to 'Product', 'product.html' %></li>
+            <li><%= link_to 'Plans', 'plans.html' %></li>
+            <li><%= link_to 'Resources', '#' %></li>
+            <li><%= link_to 'About', 'about.html' %></li>
+            <li><%= link_to 'Log in', 'https://app.vibbio.com' %></li>
         </ul>
     </nav>
 
