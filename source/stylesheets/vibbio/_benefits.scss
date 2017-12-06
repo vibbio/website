@@ -2,7 +2,7 @@
     align-items: flex-start;
     background-color: $light-turquoise;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: modular-scale(4) 4rem;
 
     h2 {
@@ -12,20 +12,17 @@
     div {
         display: flex;
         flex-direction: column;
-        padding: 0 1rem;
+        padding: 1rem;
+        min-width: 16em;
         width: calc(100% / 4);
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
     }
     p {
         line-height: 1.4;
         width: 16em;
     }
 }
-@media screen and (max-width: 600px) {
-    .benefits {}
+@media screen and (min-width: 650px) {
+    .benefits {
+        justify-content: space-between;
+    }
 }
