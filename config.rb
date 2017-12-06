@@ -48,6 +48,7 @@ page '/*.txt', layout: false
 
 configure :build do
   config[:host] = 'https://storage.googleapis.com/alexandras-bucket'
+   activate :relative_assets
 #  activate :minify_css
 #  activate :minify_javascript
 end
