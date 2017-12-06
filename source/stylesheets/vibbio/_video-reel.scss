@@ -1,10 +1,4 @@
 .video-reel {
-    align-items: center;
-    background-color: $light-turquoise;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: modular-scale(6) 4rem;
 
     h2 {
         @extend .h2 

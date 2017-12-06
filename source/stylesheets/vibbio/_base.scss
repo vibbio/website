@@ -40,6 +40,10 @@ section {
     padding: modular-scale(6) 4rem;
 }
 
+.tinted {
+    background-color: $light-turquoise;
+}
+
 .responsive-video-50 {
     display: flex;
     width: 50%;
