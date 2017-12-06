@@ -7,6 +7,7 @@ end
 
 activate :livereload
 
+set :relative_links, true
 set :markdown_engine, :kramdown
 set :markdown, parse_block_html: true
 
@@ -45,7 +46,8 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  config[:host] = 'https://storage.googleapis.com/alexandras-bucket'
+#  activate :minify_css
+#  activate :minify_javascript
+end
