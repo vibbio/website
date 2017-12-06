@@ -1,7 +1,10 @@
 language: ruby
 rvm:
 - 2.4
-- 2.4.2p198
+
+script:
+- bundle exec middleman build
+
 deploy:
   provider: gcs
   access_key_id: GOOG6UQJLCLRBPPE66RN
