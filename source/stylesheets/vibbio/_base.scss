@@ -39,3 +39,21 @@ section {
     justify-content: center;
     padding: modular-scale(6) 4rem;
 }
+
+.responsive-video-50 {
+    display: flex;
+    width: 50%;
+
+    iframe {
+        background-color: $white;
+        border-radius: $base-border-radius;
+        // box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+        overflow: hidden;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .responsive-video-50 iframe {
+        height: 100%;
+    }
+}
