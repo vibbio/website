@@ -1,0 +1,32 @@
+.plans-include {
+    h1 {
+        @extend .h1;
+    }
+    h2 {
+        @extend .section-heading;
+        text-align: left;
+    }
+    img {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+    }
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 4rem;
+    }
+    .feature {
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .plans-include article {
+        grid-template-columns: 1fr;
+        grid-gap: none;
+    }
+}

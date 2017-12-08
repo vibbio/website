@@ -8,16 +8,11 @@
         width: 100%;
     }
     .col {
-        width: 30rem;
+        width: 25rem;
         margin-bottom: modular-scale(3);
-        padding: 0 2rem;
     }
     h1 {
-        color: $dark-petroleum;
-        font-family: $heading-font-family;
-        font-size: modular-scale(3);
-        font-weight: $heading-font-weight;
-        margin-bottom: modular-scale(2);
+        @extend .h1;
     }
     h2 {
         @extend .section-heading;
@@ -37,5 +32,14 @@
     li {
         @extend .measure;
         list-style: disc inside;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .faq .faq-list {
+        justify-content: flex-start;
+    }
+    .faq .col {
+        width: 100%;
     }
 }
