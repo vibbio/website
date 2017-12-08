@@ -1,0 +1,30 @@
+.faq {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .col {
+        width: 30rem;
+        margin-bottom: modular-scale(3);
+        padding: 0 2rem;
+    }
+    h2 {
+        @extend .section-heading;
+        text-align: left;
+    }
+    h2:first-of-type {
+        margin-top: 0;
+    }
+    h3 {
+        @extend .h3;
+        font-weight: 400;
+        margin: 2rem 0 1rem 0;
+    }
+    p {
+        @extend .measure;
+    }
+    li {
+        @extend .measure;
+        list-style: disc inside;
+    }
+}
