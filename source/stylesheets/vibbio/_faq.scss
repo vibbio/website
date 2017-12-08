@@ -1,12 +1,23 @@
 .faq {
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    .faq-list {    
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
     .col {
         width: 30rem;
         margin-bottom: modular-scale(3);
         padding: 0 2rem;
+    }
+    h1 {
+        color: $dark-petroleum;
+        font-family: $heading-font-family;
+        font-size: modular-scale(3);
+        font-weight: $heading-font-weight;
+        margin-bottom: modular-scale(2);
     }
     h2 {
         @extend .section-heading;
