@@ -1,0 +1,56 @@
+.plans {
+    padding-bottom: modular-scale(4);
+    h1 {
+        @extend .h1;
+        margin-bottom: 1.3em;
+    }
+    h2 {
+        @extend .section-heading
+    }
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: modular-scale(4);
+        width: 100%;
+    }
+    .plan {
+        border-radius: $base-border-radius;
+        cursor: default;
+        padding: 2.5rem 2rem;
+        text-align: center;
+    }
+    .plan:nth-child(2) {
+        margin: 0 1rem;
+        box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+        transform: scale(1.05);
+        .price {
+            color: $turquoise;
+        }
+        li {
+            font-weight: bold;
+            color: $anthracite;
+        }
+        .button {
+            @extend .vibbio-primary-button;
+        }
+    }
+    .price {
+        font-family: $heading-font-family;
+        color: $petroleum;
+        font-size: modular-scale(4);
+        margin: 0;
+        line-height: 2;
+    }
+    .button {
+        @extend .vibbio-bare-button;
+        border: 1px solid transparentize($anthracite, 0.7);
+        color: $anthracite;
+        margin-top: 2.5rem;
+        &:hover {
+            background-color: $turquoise;
+            border: 1px solid $turquoise;
+            color: $white;
+        }
+    }
+}

@@ -1,14 +1,15 @@
 .vibbio-bare-button {
     border-radius: 2.5em;
     border: none;
+    display: block;
     font-family: $heading-font-family;
-    padding: 1.5em 2.5em;
-    transition: all $base-duration $base-timing;
     font-size: 0.65rem;
     font-weight: bold;
     letter-spacing: .15em;
+    padding: 1.5em 2.5em;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all $base-duration $base-timing;
 }
 .vibbio-primary-button {
     @extend .vibbio-bare-button;
