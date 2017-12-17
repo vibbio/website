@@ -38,7 +38,8 @@ nav.desktop {
   .button {
     @extend .vibbio-bare-button;
     background-color: transparent;
-    border: $base-border; 
+    border: $base-border;
+    border-color: transparentize($white, 0.5);
     &:hover {
       background-color: $white;
       color: $action-color;
@@ -54,7 +55,8 @@ nav.desktop {
   top: 0;
   left: 0;
   width: 100%;
-  transition: visibility $base-duration $base-timing 400ms, opacity 400ms $base-timing;
+  transition: visibility $base-duration $base-timing 400ms, 
+              opacity 400ms $base-timing;
   visibility: hidden;
   z-index: 2;
 
@@ -68,7 +70,8 @@ nav.desktop {
 .overlay.open {
   opacity: 1;
   visibility: visible;
-  transition: visibility $base-duration $base-timing, opacity 400ms $base-timing 200ms;
+  transition: visibility $base-duration $base-timing, 
+              opacity 400ms $base-timing 200ms;
 
   nav ul {
     opacity: 1;
