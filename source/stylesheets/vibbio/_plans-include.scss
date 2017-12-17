@@ -14,13 +14,13 @@
     article {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem 4rem;
+        grid-gap: 3rem 4rem;
     }
     .feature {
         align-items: flex-start;
         display: flex;
         justify-content: flex-start;
-        width: 30rem;
+        width: 27rem;
     }
 }
 
