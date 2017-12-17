@@ -1,31 +1,36 @@
 <section class="video-reel <%= shade ||= '' %> ">
-    <h2>Our videos</h2>
+    <h2>Our work</h2>
 
-    <p class="ingress">With VIBBIO, it’s easy as pie to create videos like these</p>
+    <p class="ingress">
+        Whether you need videos for social media, websites, employee training, landing pages or newsletters, we’ve got your back.
+    </p>
 
     <div class="videos">
         <div class="single-video">
+            <%= partial 'partials/play-button' %>
             <%= image_tag 'http://via.placeholder.com/230x129' %>
             <p class="caption">
-                <span class="customer">No Isolation</span>
-                KOMP
+                <span class="customer">Pierre Robert</span>
+                <!-- KOMP -->
                 <span class="date">November 2017</span>
             </p>
         </div>
         <div class="single-video">
+            <%= partial 'partials/play-button' %>
             <%= image_tag 'http://via.placeholder.com/230x129' %>
             <p class="caption">
-                <span class="customer">No Isolation</span>
-                KOMP
-                <span class="date">November 2017</span>
+                <span class="customer">Oslo Kommune</span>
+                <!-- KOMP -->
+                <span class="date">December 2017</span>
             </p>
         </div>
         <div class="single-video">
+            <%= partial 'partials/play-button' %>
             <%= image_tag 'http://via.placeholder.com/230x129' %>
             <p class="caption">
-                <span class="customer">No Isolation</span>
-                KOMP
-                <span class="date">November 2017</span>
+                <span class="customer">BaneNor</span>
+                <!-- KOMP -->
+                <span class="date">December 2017</span>
             </p>
         </div>
     </div>
