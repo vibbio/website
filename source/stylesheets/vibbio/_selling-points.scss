@@ -6,7 +6,7 @@
     
     main {
         display: flex;
-        margin-bottom: modular-scale(4);
+        margin-bottom: modular-scale(2);
         justify-content: center;
         width: calc(100% - 8rem);
     }
@@ -23,7 +23,7 @@
     .point {
         align-items: flex-start;
         display: flex;
-        margin: 0 0 1rem 0;
+        margin: 0 0 2rem 0;
     }
     .point-inner {
         display: flex;
@@ -56,6 +56,7 @@
         @extend .vibbio-bare-button;
         background-color: $action-color;
         color: $white;
+        margin-bottom: modular-scale(1);
         &:hover {
             background-color: $petroleum;
         }

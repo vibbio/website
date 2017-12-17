@@ -1,3 +1,3 @@
-# VIBBIO is video on demand
+# VIBBIO is video production on demand
 
-The way we communicate is changing. Video is quickly becoming one of the most important tools for companies to stand out online.
+We help brands connect with their customers through engaging video content.

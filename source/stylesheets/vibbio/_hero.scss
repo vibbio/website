@@ -18,7 +18,8 @@
     margin: modular-scale(2) 4rem modular-scale(0);
   }
   p {
-    font-size: 1.25rem;
+    font-size: modular-scale(2);
+    margin: 0 4rem;
     max-width: 27em;
     padding-bottom: 2rem;
     text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);

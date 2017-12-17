@@ -15,12 +15,13 @@
 
         & div {
         margin: 0 2rem modular-scale(2);
+        width: 18.75rem;
         }
     }
 
     h3 {
         font-family: $heading-font-family;
-        font-size: modular-scale(5);
+        font-size: calc(3vw + 3rem);
         font-weight: 400;
         color: $turquoise;
         text-align: center;

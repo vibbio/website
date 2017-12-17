@@ -5,7 +5,7 @@
         align-items: flex-start;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: modular-scale(3);
         width: 100%;
     }
@@ -23,10 +23,11 @@
     p {
         max-width: 18em;
         margin: 0;
+        padding-bottom: 1.5em;
     }
     .details {
         display: flex;
-        padding: 1.5em 0 0 0;
+        padding: 0;
     }
     .details img {
         border-radius: 50%;
