@@ -1,7 +1,6 @@
 .hero {
   align-items: center;
   background-color: $turquoise;
-  background-image: url(../images/banner_2.jpg);
   background-size: cover;
   border-bottom: 2px solid $white;
   color: $white;
@@ -51,5 +50,27 @@
   }
   100% {
     transform: translate3d(0, 0, 0)
+  }
+}
+
+// SPECIAL STYLES PER PAGE
+
+.index .hero {
+    background-image: url(../images/banner_2.jpg);
+}
+.product .hero {
+    background-image: url(../images/banner_2.jpg);
+}
+.plans .hero {
+    background-image: url(../images/banner_2.jpg);
+}
+.about .hero {
+  .split { 
+    align-items: flex-end;
+  }
+  .split div:first-child {
+    h1, p {
+      text-align: left;
+    }
   }
 }

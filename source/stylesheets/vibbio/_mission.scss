@@ -1,0 +1,27 @@
+.mission {
+    .split {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            width: calc(50% - 1rem);
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+    h2 {
+        @extend .h2;
+    }
+    p {
+        @extend .ingress;
+        text-align: left;
+        margin-bottom: modular-scale(1);
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}

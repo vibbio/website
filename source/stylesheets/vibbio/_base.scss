@@ -46,6 +46,16 @@ section {
     padding: modular-scale(6) 4rem;
 }
 
+.split {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+        width: 50%;
+        max-width: 50vw;
+    }
+}
+
 .tinted {
     background-color: $light-turquoise;
 }
