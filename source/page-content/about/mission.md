@@ -1,4 +1,4 @@
-## What we do & why
+## Why VIBBIO?
 
 The way we communicate is changing. Video is quickly becoming one of the most important tools for companies to stand out online. However, video production is both expensive and time consuming – that’s why we started VIBBIO.
 
