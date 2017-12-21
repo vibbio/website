@@ -1,3 +1,8 @@
+:root {
+    --path-length: 1000;
+    --duration: 5s;
+}
+
 .vibbio-bare-button {
     border-radius: 2.5em;
     border: none;
@@ -55,6 +60,23 @@ section {
     width: 4rem;
     z-index: 999;
     transition: fill $base-timing $base-duration;
+}
+
+#symbol-outline {
+    max-width: 166px;
+    margin: 200px auto;
+}
+
+#symbol-outline path {
+    stroke-dasharray: var(--path-length);
+    stroke-dashoffset: var(--path-length);
+    animation: draw var(--duration) cubic-bezier(.45,.05,.55,.95) forwards infinite;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .responsive-video-50 {
