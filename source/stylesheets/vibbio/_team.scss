@@ -27,13 +27,15 @@
         @extend .member-img;
         position: relative;
         transition: all $base-duration $base-timing;
-        &:hover {
-            transform: scale(1.1);
-            z-index: 999;
+        &:hover, &:focus {
+            transform: scale3d(1.1, 1.1, 1.1);
             box-shadow: 0 0 4px rgba(0,0,0,0.22);
             border-radius: 2px;
+            overflow: hidden;
+            z-index: 99;
         }
-        &:hover .team-overlay {
+        &:hover .team-overlay,
+        &:focus .team-overlay {
             opacity: .9;
             border-radius: 2px;
         }
@@ -90,8 +92,11 @@
     }
     .box {
         @extend .name;
+        color: $white;
         font-size: modular-scale(2);
         text-decoration: none;
-        color: $white;
+        padding-bottom: 0;
+        width: 100%;
+        line-height: 12rem;
     }
 }
