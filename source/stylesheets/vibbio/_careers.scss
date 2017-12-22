@@ -1,0 +1,53 @@
+.careers {
+    display: block;
+
+    .grid {    
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 25rem);
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+
+    h2 {
+        @extend .h2;
+    }
+    h3 {
+        @extend .section-heading;
+        margin-top: modular-scale(4);
+        margin-bottom: modular-scale(3);
+    }
+    a {
+        color: $base-font-color;
+        text-decoration: none;
+    }
+    .job-card {
+        @extend .card;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 7.5rem;
+        padding: 1rem 2rem;
+        width: 25rem;
+    }
+    .job-title {
+        font-size: modular-scale(1);
+        font-family: $heading-font-family;
+        line-height: 1.2;
+        transition: color $base-duration $base-timing;
+    }
+    .job-location {
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        font-size: modular-scale(-1);
+        color: transparentize($base-font-color, 0.2);
+    }
+    a:hover .job-title {
+        color: $turquoise;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .careers {
+        // grid-template-columns: 25rem;
+    }
+}

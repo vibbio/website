@@ -12,20 +12,11 @@
         padding-bottom: modular-scale(3);
     }
     .single-video {
-        background-color: $white;
-        border: 1px solid #ededed;
-        border-radius: $base-border-radius;
-        cursor: pointer;
-        overflow: hidden;
+        @extend .card;
         margin: 0 1rem 2rem 1rem;
         min-width: 230px;
         position: relative;
-        transition: box-shadow $base-duration $base-timing;
 
-
-         &:hover {
-            box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
-        }
         &:hover .play-button {
             fill: $turquoise;
         }

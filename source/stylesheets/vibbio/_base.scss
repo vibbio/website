@@ -57,6 +57,18 @@ section {
     }
 }
 
+.card {
+    background-color: $white;
+    border: 1px solid #ededed;
+    border-radius: $base-border-radius;
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow $base-duration $base-timing;
+    &:hover {
+        box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+    }
+}
+
 .tinted {
     background-color: $light-turquoise;
 }
