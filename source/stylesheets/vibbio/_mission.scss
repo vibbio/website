@@ -1,13 +1,4 @@
 .mission {
-    .split {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        div {
-            width: calc(50% - 1rem);
-        }
-    }
     img {
         width: 100%;
         border-radius: 2px;

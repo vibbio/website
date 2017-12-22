@@ -49,9 +49,10 @@ section {
 .split {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
     div {
-        width: 50%;
+        width: calc(50% - 1rem);
         max-width: 50vw;
     }
 }
@@ -88,18 +89,16 @@ section {
     }
 }
 
-.responsive-video-50 {
-    display: flex;
-    width: 50%;
-
-    iframe {
-        background-color: $white;
-        border-radius: $base-border-radius;
-        // box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
-        overflow: hidden;
-        width: 100%;
+@media screen and (max-width: 900px) {
+    .split {
+        flex-direction: column-reverse;
+        div {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 }
+
 @media screen and (max-width: 520px) {
     .responsive-video-50 iframe {
         height: 100%;
