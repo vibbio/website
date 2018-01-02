@@ -42,7 +42,7 @@
         margin: 0;
         line-height: 2;
     }
-    .button {
+    .signup-button {
         @extend .vibbio-bare-button;
         border: 1px solid transparentize($anthracite, 0.7);
         color: $anthracite;
