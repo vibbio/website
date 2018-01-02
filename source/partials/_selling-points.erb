@@ -2,15 +2,13 @@
     <h2>So Intutive, So Easy!</h2>
 
     <p class="ingress">Order the video production you need, when you need it!</p>
-    
-    <main>    
-        <div class="video-embed">
-            <iframe src="https://player.vimeo.com/video/231544979?color=25cbd3&title=0&byline=0&portrait=0" width="400" height="224" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
+
+    <main>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/231544979', :image_url => 'http://placebeyonce.com/640-360', :alt_text => 'About VIBBIO'} %>
         <div class="points">
             <div class="point">
                 <%= image_tag 'Vibbio.symbol.png', :alt => "Icon first selling point" %>
-                <div class="point-inner">                
+                <div class="point-inner">
                     <h3>Flexible</h3>
                     <p>Find a user plan that fits your needs, and spend your credits the way you want.</p>
                 </div>
@@ -18,7 +16,7 @@
             </div>
             <div class="point">
                 <%= image_tag 'Vibbio.symbol.png', :alt => "Icon second selling point" %>
-                <div class="point-inner"> 
+                <div class="point-inner">
                     <h3>Fast</h3>
                     <p>We’ll finish your order within 2-7 days, without compromising on quality.</p>
                 </div>
@@ -27,14 +25,14 @@
                 <%= image_tag 'Vibbio.symbol.png', :alt => "Icon third selling point" %>
                 <div class="point-inner">
                     <h3>Affordable</h3>
-                    <p>All brands need video - with VIBBIO, you won’t have to break the bank.</p>                    
+                    <p>All brands need video - with VIBBIO, you won’t have to break the bank.</p>
                 </div>
             </div>
         </div>
 
     </main>
 
-    <%= link_to 'Try it for free', '/plans.html' %>
+    <%= link_to 'Try it for free', '/plans.html', :class => 'button' %>
 
     <p class="fineprint">14 day free trial&mdash;no credit card required.</p>
 </section>

@@ -1,12 +1,12 @@
-.selling-points {   
-    
+.selling-points {
+
     h2 {
         @extend .h2;
     }
-    
+
     main {
         display: flex;
-        margin-bottom: modular-scale(2);
+        margin-bottom: modular-scale(3);
         justify-content: center;
         width: calc(100% - 8rem);
     }
@@ -24,6 +24,11 @@
         align-items: flex-start;
         display: flex;
         margin: 0 0 2rem 0;
+        img {
+            display: block;
+            height: 2rem;
+            width: 2rem;
+        }
     }
     .point-inner {
         display: flex;
@@ -35,24 +40,17 @@
             max-width: 20em;
         }
     }
-    .video-embed { 
-        @extend .responsive-video-50;   
+    .video-embed {
         margin-right: 2rem;
-        justify-content: flex-end;
+        width: 50%;
     }
 
-    img {
-        display: block; 
-        height: 2rem;
-        width: 2rem;
-    }
-    
     h3 {
         @extend .section-heading;
         text-align: left;
     }
 
-    a {
+    .button {
         @extend .vibbio-bare-button;
         background-color: $action-color;
         color: $white;

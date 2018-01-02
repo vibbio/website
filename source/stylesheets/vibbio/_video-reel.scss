@@ -1,9 +1,9 @@
 .video-reel {
 
     h2 {
-        @extend .h2 
+        @extend .h2
     }
-    
+
     .videos {
         align-items: stretch;
         display: flex;
@@ -38,8 +38,8 @@
         display: block;
         margin-top: .5em;
     }
-    
-    a {
+
+    .button {
         @extend .vibbio-bare-button;
         background-color: $turquoise;
         color: $white;

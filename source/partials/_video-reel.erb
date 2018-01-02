@@ -7,8 +7,7 @@
 
     <div class="videos">
         <div class="single-video">
-            <%= partial 'partials/play-button' %>
-            <%= image_tag 'http://via.placeholder.com/230x129' %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/231544979', :image_url => 'http://placebeyonce.com/230-172', :alt_text => 'About VIBBIO'} %>
             <p class="caption">
                 <span class="customer">Pierre Robert</span>
                 <!-- KOMP -->
@@ -16,8 +15,7 @@
             </p>
         </div>
         <div class="single-video">
-            <%= partial 'partials/play-button' %>
-            <%= image_tag 'http://via.placeholder.com/230x129' %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/231544979', :image_url => 'http://placebeyonce.com/230-172', :alt_text => 'About VIBBIO'} %>
             <p class="caption">
                 <span class="customer">Oslo Kommune</span>
                 <!-- KOMP -->
@@ -25,8 +23,7 @@
             </p>
         </div>
         <div class="single-video">
-            <%= partial 'partials/play-button' %>
-            <%= image_tag 'http://via.placeholder.com/230x129' %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/231544979', :image_url => 'http://placebeyonce.com/230-172', :alt_text => 'About VIBBIO'} %>
             <p class="caption">
                 <span class="customer">BaneNor</span>
                 <!-- KOMP -->
@@ -34,6 +31,6 @@
             </p>
         </div>
     </div>
-    
-    <%= link_to 'Learn more', '/product.html' %>
+
+    <%= link_to 'Learn more', '/product.html', :class => 'button' %>
 </section>
