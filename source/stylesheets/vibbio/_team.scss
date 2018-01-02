@@ -9,8 +9,8 @@
         margin: modular-scale(6) 0 modular-scale(4);
     }
     .member-img {
-        height: 12.5rem;
-        width: 12.5rem;
+        width: 100%;
+        transition: transform $base-duration $base-timing;
     }
 
     .photo-grid {
@@ -24,26 +24,33 @@
         }
     }
     .team-member {
-        @extend .member-img;
+        height: 12.5rem;
+        width: 12.5rem;
         position: relative;
         transition: all $base-duration $base-timing;
         &:hover, &:focus {
-            transform: scale3d(1.1, 1.1, 1.1);
             box-shadow: 0 0 4px rgba(0,0,0,0.22);
-            border-radius: 2px;
-            overflow: hidden;
             z-index: 99;
         }
-        &:hover .team-overlay,
-        &:focus .team-overlay {
+        &:hover .team-overlay-inner,
+        &:focus .team-overlay-inner,
+        &:hover .overlay-bg,
+        &:focus .overlay-bg {
             opacity: .9;
             border-radius: 2px;
+            transition: opacity $base-duration $base-timing;
+        }
+        &:hover .member-img,
+        &:focus .member-img {
+            border-radius: 2px;
+            transform: scale3d(1.1, 1.1, 1.1);
+            transition: transform $base-duration $base-timing;
         }
     }
-    .team-overlay {
-        @extend .member-img;
+    .team-overlay-inner {
+        height: 12.5rem;
+        width: 12.5rem;
         align-items: center;
-        background: linear-gradient(135deg, $turquoise, $petroleum);
         color: $white;
         display: flex;
         flex-direction: column;
@@ -57,6 +64,18 @@
         p {
             margin: 0;
         }
+    }
+    .overlay-bg {
+        background: linear-gradient(135deg, $turquoise, $petroleum);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale3d(1.1, 1.1, 1.1);
+        transition: transform $base-duration $base-timing;
+        width: 100%;
+        height: 100%;
+
     }
     .name {
         font-size: modular-scale(0);
@@ -88,7 +107,12 @@
         align-items: center;
         justify-content: center;
         font-size: modular-scale(0);
+        transition: transform $base-duration $base-timing;
         opacity: 1;
+        &:hover, &:focus {
+            transform: scale3d(1.1, 1.1, 1.1);
+            transition: transform $base-duration $base-timing;
+        }
     }
     .box {
         @extend .name;
