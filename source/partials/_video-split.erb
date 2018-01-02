@@ -2,9 +2,9 @@
     <main>
         <div class="content">
             <h2>A fully integrated video production workflow for marketing and communication teams</h2>
-            
+
             <p>We know you long for higher video output, but barriers such as time and money often get in the way.</p>
-            
+
             <p>VIBBIO is designed for you to be able to effortlessly integrate video into your marketing- and communication strategy.</p>
 
             <p>You can order the video production you need, when you need it. Create new video campaigns from scratch, or revamp your existing content to offer a new angle.</p>
@@ -13,8 +13,6 @@
 
             <p>With our credits-system, you simply order the services you need.</p>
         </div>
-        <div class="video-embed">
-            <iframe src="https://player.vimeo.com/video/230150406?color=25cbd3&title=0&byline=0&portrait=0" width="400" height="224" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/230150406', :image_url => 'http://placebeyonce.com/640-360', :alt_text => 'Customer testimonial'} %>
     </main>
 </section>
