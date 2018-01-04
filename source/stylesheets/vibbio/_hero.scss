@@ -65,7 +65,9 @@
     background-image: url(../images/banner_2.jpg);
 }
 .about .hero {
-  .split { 
+    background-image: url(../images/banner_illus_1.svg),
+                      linear-gradient(90deg, #26CAD3 0%, #22C1CB 16%, #1AA7B4 42%, #0C7D8F 75%, #00586F 100%);
+  .split {
     align-items: flex-end;
     width: 100%;
   }
