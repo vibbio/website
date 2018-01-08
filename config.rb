@@ -39,6 +39,13 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
+# module EmojiHelper
+helpers do
+  def emojify(content, **options)
+    Twemoji.parse(h(content), options).html_safe if content.present?
+  end
+end
+
 # helpers do
 #   def some_helper
 #     'Helping'
