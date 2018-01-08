@@ -13,6 +13,8 @@ set :markdown, parse_block_html: true
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
+page "/careers/*", :layout => "text-page"
+
 
 # Per-page layout changes
 page '/*.xml', layout: false
