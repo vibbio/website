@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "VIBBIO" %></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli" rel="stylesheet">
+    <%= stylesheet_link_tag 'vendor/lity.min.css', relative: true %>
+    <%= stylesheet_link_tag 'site', relative: true %>
+  </head>
+  <body class="<%= page_classes %> text-page">
+    <%= partial "partials/navigation", :locals => {:background => 'banner'} %>
+    <%= yield %>
+    <%= partial "partials/footer" %>
+  </body>
+
+  <%= javascript_include_tag 'site', relative: true %>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' %>
+  <%= javascript_include_tag 'vendor/lity.min.js', relative: true %>
+
+</html>

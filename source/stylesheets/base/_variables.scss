@@ -20,9 +20,11 @@ $white: #fff;
 $light-turquoise: #edf4f5;
 $turquoise: #25cbd3;
 $petroleum: #00829A;
-$dark-petroleum: #00576F; 
+$dark-petroleum: #00576F;
 $anthracite: #263645;
 $dark-anthracite: #141d28;
+
+$banner-gradient: linear-gradient(90deg, #26CAD3 0%, #22C1CB 16%, #1AA7B4 42%, #0C7D8F 75%, #00586F 100%);
 
 // Font Colors
 $base-font-color: $dark-anthracite;
@@ -35,7 +37,7 @@ $base-border: 1px solid $base-border-color;
 
 // Background Colors
 $base-background-color: $white;
-$secondary-background-color: tint($turquoise, 85%);
+$secondary-background-color: $light-turquoise;
 
 // Focus
 $focus-outline-color: transparentize($action-color, 0.4);

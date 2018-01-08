@@ -80,7 +80,7 @@ footer {
         ul {
             display: flex;
         }
-        li:first-child::after {
+        li:not(:last-of-type)::after {
                 content: '/';
                 padding: 0 1em;
         }
@@ -102,7 +102,7 @@ footer {
                 padding-bottom: .75rem;
             }
         }
-    }     
+    }
     @media screen and (max-width: 514px) {
         main, aside {
             flex-direction: column;

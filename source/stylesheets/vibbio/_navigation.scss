@@ -34,7 +34,7 @@ nav.desktop {
 
   .menu-trigger {
     padding: 1rem 2rem;
-  } 
+  }
   .button {
     @extend .vibbio-bare-button;
     background-color: transparent;
@@ -46,6 +46,12 @@ nav.desktop {
     }
   }
 }
+nav.banner {
+  background: $banner-gradient;
+  height: 80px;
+  margin: 0;
+  padding: 1rem 2rem;
+}
 
 .overlay {
   background-color: $dark-petroleum;
@@ -55,7 +61,7 @@ nav.desktop {
   top: 0;
   left: 0;
   width: 100%;
-  transition: visibility $base-duration $base-timing 400ms, 
+  transition: visibility $base-duration $base-timing 400ms,
               opacity 400ms $base-timing;
   visibility: hidden;
   z-index: 2;
@@ -70,7 +76,7 @@ nav.desktop {
 .overlay.open {
   opacity: 1;
   visibility: visible;
-  transition: visibility $base-duration $base-timing, 
+  transition: visibility $base-duration $base-timing,
               opacity 400ms $base-timing 200ms;
 
   nav ul {
@@ -93,7 +99,7 @@ nav.desktop {
   overflow: hidden;
   z-index: 99;
 }
-  
+
 nav.mobile {
   align-items: center;
   display: flex;
@@ -136,6 +142,12 @@ nav.mobile ul {
       display: none;
     }
   }
+  nav.banner {
+    margin: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
   .overlay {
     display: none;
   }

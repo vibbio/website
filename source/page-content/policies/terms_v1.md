@@ -2,9 +2,9 @@
 title: Terms and Conditions
 ---
 
-## TERMS AND CONDITIONS
-
 # VIBBIO ONLINE SUBSCRIPTION AGREEMENT
+
+## TERMS AND CONDITIONS
 
 The following online subscription agreement “Agreement” forms the terms of supply for the Vibbio Platform available on vibbio.com.
 
@@ -114,15 +114,15 @@ If you have breached this Agreement, we reserve the right to disclose all releva
 
 **13. Liability**
 
-VIBBIO SHALL IN NO EVENT BE LIABLE FOR ANY LOST PROFITS, LOST SAVINGS, LOSS OF REPUTATION, LOSS OF GOODWILL, INDIRECT, INCIDENTIAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE SALE OF ANY PRODUCTS OR SERVICES BY VIBBIO OR THE USE THEREOF WHETHER OR NOT SUCH DAMAGES ARE BASED ON TORT, WARRANTY, CONTRACT OR OTHER LEGAL THEORY, EVEN IF VIBBIO HAS BEEN ADVISED OR IS AWARE OF THE POSSIBILITIES OF SUCH DAMAGES.
+**VIBBIO SHALL IN NO EVENT BE LIABLE FOR ANY LOST PROFITS, LOST SAVINGS, LOSS OF REPUTATION, LOSS OF GOODWILL, INDIRECT, INCIDENTIAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE SALE OF ANY PRODUCTS OR SERVICES BY VIBBIO OR THE USE THEREOF WHETHER OR NOT SUCH DAMAGES ARE BASED ON TORT, WARRANTY, CONTRACT OR OTHER LEGAL THEORY, EVEN IF VIBBIO HAS BEEN ADVISED OR IS AWARE OF THE POSSIBILITIES OF SUCH DAMAGES.**
 
-VIBBIO S AGGREGATE AND CUMULATIVE LIABILITY TOWARDS YOU UNDER ANY SALE/AGREEMENT SHALL NOT EXCEED AN AMOUNT OF TEN PERCENT (10%) OF THE RELATED SALE / AGREEMENT.
+**VIBBIO S AGGREGATE AND CUMULATIVE LIABILITY TOWARDS YOU UNDER ANY SALE/AGREEMENT SHALL NOT EXCEED AN AMOUNT OF TEN PERCENT (10%) OF THE RELATED SALE / AGREEMENT.**
 
-ANY CLAIM FROM YOU FOR DAMAGES MUST BE NOTIFIED TO VIBBIO WITHIN NINETY (90) DAYS OF THE DATE OF THE EVENT GIVING RISE TO ANY SUCH CLAIM, AND ANY LAWSUIT RELATIVE TO ANY SUCH CLAIM MUST BE FILED WITHIN ONE (1) YEAR OF THE DATE OF THE CLAIM.
+**ANY CLAIM FROM YOU FOR DAMAGES MUST BE NOTIFIED TO VIBBIO WITHIN NINETY (90) DAYS OF THE DATE OF THE EVENT GIVING RISE TO ANY SUCH CLAIM, AND ANY LAWSUIT RELATIVE TO ANY SUCH CLAIM MUST BE FILED WITHIN ONE (1) YEAR OF THE DATE OF THE CLAIM.**
 
 **14. Indemnities**
 
-YOU AGREE TO INDEMNIFY AND HOLD VIBBIO, ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, CONSULTANTS AND ADVISERS, HARMLESS FROM ANY AND ALL CLAIMS, INCLUDING BUT NOT LIMITED DAMAGES, LEGAL FEES, COST AND EXPENCES, FROM THIRD PARTIES ARISING IN CONNECTION WITH THE PRODUCTS.
+**YOU AGREE TO INDEMNIFY AND HOLD VIBBIO, ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, CONSULTANTS AND ADVISERS, HARMLESS FROM ANY AND ALL CLAIMS, INCLUDING BUT NOT LIMITED DAMAGES, LEGAL FEES, COST AND EXPENCES, FROM THIRD PARTIES ARISING IN CONNECTION WITH THE PRODUCTS.**
 
 **15. Force Majeure**
 
@@ -160,40 +160,40 @@ This Agreement is governed by and construed in accordance with the laws of Norwa
 
 This Agreement enters into force upon your acceptance of this Agreement by ticking off on the box “I am authorized to accept and hereby accept this Agreement on behalf of the customer” on the website vibbio.com.
 
-# Privacy Policy
+## Privacy Policy
 
 VIBBIO AS operates through http://www.vibbio.com. This section informs you of our policies regarding the collection, use and disclosure of personal information we receive from users of the site and our services.
 
 We use your personal information only for improving and providing the site. You agree to the use and collections of information by using the site.
 
-## Information Collection and Use
+### Information Collection and Use
 
 To identify or contact you while using our site and services, we will ask you to provide us with personal identifiable information. Personally identifiable information may include, but is not limited to your name, e-mail, phone number, billing information and company name.
 
-## Log Data
+### Log Data
 
 Whenever you visit our site we collect information sent by your browser. This log data may include information such as your computer Internet Protocol ("IP") address, browser type, browser version, the pages of our site that you visit, the time and date of your visit, the time spent on those pages and other statistics. In addition, we may use third party services such as Google Analytics that monitor, analyze and collect all collected information.
 
-## Communications
+### Communications
 
 We may use your personal information to contact you with newsletters, marketing or promotional materials and other information that is crucial to the service provided by VIBBIO AS.
 
-## Links To Other Web Sites
+### Links To Other Web Sites
 
 Our Service may contain links to third-party web sites or services that are not owned or controlled by VIBBIO AS. VIBBIO AS has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that VIBBIO AS shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
 
-## Cookies
+### Cookies
 
-See https://vibbio.com/public/cookies
+[See our cookies policy](./cookies.html)
 
-## Security
+### Security
 
 The security of your personal information is very important to us. We strive to use commercially acceptable means to protect your personal information, but we cannot guarantee its absolute security. No method of electronic storage or transmission over the internet is 100% secure.
 
-# Changes to Terms and Conditions
+## Changes to Terms and Conditions
 
 We reserve the right, at our sole discretion, to replace or modify these Terms and Conditions at any time. We will notify you either through the email address you have provided us, or by placing a prominent notice on our website if any material changes are made to the Privacy policy. We will determine what constitutes a material change at our sole discretion.
 
-## Contact Us
+### Contact Us
 
-If you have any questions about these Terms and Conditions, please contact us.
+If you have any questions about these Terms and Conditions, please [contact us](./about.html#contact).
