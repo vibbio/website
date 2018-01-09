@@ -13,8 +13,10 @@
   text-align: center;
 
   h1 {
+    color: $white;
     font-size: modular-scale(4);
     margin: modular-scale(2) 4rem modular-scale(0);
+    text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
   }
   p {
     font-size: modular-scale(2);
@@ -76,4 +78,9 @@
       text-align: left;
     }
   }
+}
+.x404 .hero {
+  background-image: url(../images/banner_illus_1.svg),
+                    $banner-gradient;
+  border-bottom: none;
 }
