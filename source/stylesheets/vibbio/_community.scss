@@ -1,0 +1,121 @@
+legend {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+fieldset {
+    border: none;
+}
+label {
+    color: $dark-petroleum;
+    line-height: 2;
+}
+label:before {
+    transition: all $base-duration $base-timing;
+}
+label:hover:before {
+    border-color: $turquoise !important;
+}
+#specialties > label {
+    color: $base-font-color;
+}
+input, textarea {
+    border: 1px solid transparentize($base-font-color, 0.6);
+    border-radius: $base-border-radius;
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: modular-scale(0);
+    line-height: 1.6;
+    padding: .5em;
+    width: 100%;
+    transition: all $base-duration $base-timing;
+
+}
+input:focus, textarea:focus {
+    border: 1px solid $turquoise;
+    outline: none;
+}
+input {
+    height: 2.5em;
+    vertical-align: middle;
+}
+textarea {
+    margin-top: .5em;
+    resize: none;
+    overflow: auto;
+}
+.form-heading {
+    @extend .section-heading;
+}
+.form-heading:not(:first-of-type) {
+    margin: modular-scale(4) 0 modular-scale(2);
+}
+form p {
+    margin-bottom: 1em;
+}
+form em {
+    color: transparentize($base-font-color, 0.2);
+}
+button {
+    @extend .vibbio-primary-button;
+    margin: modular-scale(4) auto 0;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+    transition: all $base-duration $base-timing;
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border: 1px solid transparentize($base-font-color, 0.6);
+    background: $white;
+    border-radius: $base-border-radius;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✕';
+  position: absolute;
+  top: -0.04em;
+  left: 0.15em;
+  font-size: 1.4em;
+  line-height: 0.8;
+  color: $turquoise;
+  transition: all $base-duration $base-timing;
+  font-family: $base-font-family;
+}
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+[type="checkbox"]:checked:focus + label,
+[type="checkbox"]:not(:checked):focus + label {
+  color: $turquoise;
+}
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted $turquoise;
+}

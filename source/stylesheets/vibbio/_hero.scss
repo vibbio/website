@@ -79,6 +79,19 @@
     }
   }
 }
+.community .hero {
+  background-image: url(../images/banner_illus_1.svg),
+                      $banner-gradient;
+  height: auto;
+  border-bottom: none;
+  min-height: auto;
+  padding-bottom: modular-scale(3);
+
+  h1 {
+    margin: modular-scale(3) 4rem modular-scale(0);
+
+  }
+}
 .x404 .hero {
   background-image: url(../images/banner_illus_1.svg),
                     $banner-gradient;
