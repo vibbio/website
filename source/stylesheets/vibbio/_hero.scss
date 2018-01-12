@@ -26,7 +26,7 @@
     text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
   }
 
-  a {
+  a:not(.video-placeholder) {
     @extend .vibbio-inverted-button;
     text-shadow: none;
   }
@@ -66,17 +66,30 @@
 .plans .hero {
     background-image: url(../images/banner_2.jpg);
 }
-.about .hero {
+.about .hero,
+.vibbio-productions .hero {
     background-image: url(../images/banner_illus_1.svg),
                       $banner-gradient;
   .split {
-    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 modular-scale(4);
     width: 100%;
+    h1 {
+      margin: 0;
+      max-width: calc(40% - 4rem);
+      text-align: right;
+    }
   }
   .split div:first-child {
     h1, p {
       text-align: left;
     }
+  }
+  .video-placeholder {
+      border-radius: $base-border-radius;
+  }
+  .video-embed {
+    justify-content: flex-start;
   }
 }
 .community .hero {
@@ -96,4 +109,31 @@
   background-image: url(../images/banner_illus_1.svg),
                     $banner-gradient;
   border-bottom: none;
+}
+
+@media screen and (max-width: 900px) {
+  .about .hero,
+  .vibbio-productions .hero {
+    .split {
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 70%;
+      margin: 0;
+
+      & h1 {
+        max-width: none;
+        text-align: center;
+      }
+    }
+    .video-embed {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: modular-scale(3);
+    padding: 0 1rem;
+  }
 }

@@ -50,9 +50,10 @@ section {
 .split {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    div {
+    div:not(.play-button) {
         width: calc(50% - 1rem);
         max-width: 50vw;
     }
@@ -108,7 +109,7 @@ img.emoji {
 @media screen and (max-width: 900px) {
     .split {
         flex-direction: column-reverse;
-        div {
+        div:not(.play-button) {
             width: 100%;
             max-width: 100%;
         }
