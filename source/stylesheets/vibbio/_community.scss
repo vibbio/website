@@ -69,7 +69,6 @@ button {
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
     position: relative;
-    padding-left: 1.95em;
     cursor: pointer;
     transition: all $base-duration $base-timing;
 
@@ -77,45 +76,28 @@ button {
         color: $turquoise;
     }
 }
-/* checkbox aspect */
-[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"] + label:before {
+    display: inline-block;
+    position: relative;
+    opacity: .6;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-right: 0.5em;
+    margin-top: -0.1em;
+}
+[type="checkbox"]:not(:checked) + label:before {
+    content: url('data:image/svg+xml,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+}
 [type="checkbox"]:checked + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.25em;
-    height: 1.25em;
-    border: 1px solid transparentize($base-font-color, 0.6);
-    background: $white;
-    border-radius: $base-border-radius;
-}
-/* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '✕';
-  position: absolute;
-  top: -0.04em;
-  left: 0.15em;
-  font-size: 1.4em;
-  line-height: 0.8;
-  color: $turquoise;
-  transition: all $base-duration $base-timing;
-  font-family: $base-font-family;
-}
-[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-[type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
+    content: url('data:image/svg+xml,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M0 0h24v24H0z" fill="none"/> <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/> </svg>');
 }
 [type="checkbox"]:checked:focus + label,
 [type="checkbox"]:not(:checked):focus + label {
-  color: $turquoise;
+  color: $petroleum;
 }
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted $turquoise;
+  box-shadow: 0 0 2px 4px $turquoise;
 }
