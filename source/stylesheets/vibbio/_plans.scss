@@ -13,6 +13,7 @@
         justify-content: space-evenly;
         margin-bottom: modular-scale(4);
         width: 100%;
+        flex-wrap: wrap;
     }
     .plan {
         border-radius: $base-border-radius;
@@ -26,6 +27,7 @@
         font-size: modular-scale(4);
         margin: 0;
         line-height: 2;
+        white-space: nowrap;
     }
     .signup-button {
         @extend .vibbio-bare-button;

@@ -64,7 +64,7 @@ nav.banner {
   transition: visibility $base-duration $base-timing 400ms,
               opacity 400ms $base-timing;
   visibility: hidden;
-  z-index: 2;
+  z-index: 100;
 
   nav ul {
     opacity: .4;
@@ -86,17 +86,18 @@ nav.banner {
 }
 
 .close-overlay {
-  border: none;
   background-color: transparent;
-  cursor: pointer;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  width: 3rem;
-  height: 3rem;
   background: url(/images/ic_close_white.svg) no-repeat center center;
-  text-indent: 200%;
+  border: none;
+  cursor: pointer;
+  font-size: 1px;
+  height: 3rem;
   overflow: hidden;
+  position: fixed;
+  right: 2rem;
+  text-indent: 200%;
+  top: 2rem;
+  width: 3rem;
   z-index: 99;
 }
 
