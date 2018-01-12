@@ -38,6 +38,15 @@
 .measure {
     max-width: 30em;
 }
+.bullet-list {
+    li:before {
+        content: '●';
+        color: $turquoise;
+        position: relative;
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+}
 
 section {
     align-items: center;
@@ -75,7 +84,7 @@ section {
     background-color: $secondary-background-color;
 }
 
- .play-button {
+.play-button {
     fill: $white;
     display: block;
     position: absolute;

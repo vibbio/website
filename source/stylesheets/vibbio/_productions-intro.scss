@@ -1,0 +1,16 @@
+.productions-intro {
+
+    h1 {
+        text-align: center;
+    }
+    p {
+        max-width: 36em;
+    }
+    p:first-of-type {
+        @extend .ingress;
+    }
+    ul {
+        @extend .bullet-list;
+        max-width: 36em;
+    }
+}

@@ -79,6 +79,9 @@
       max-width: calc(40% - 4rem);
       text-align: right;
     }
+    a {
+        background-color: transparent;
+    }
   }
   .split div:first-child {
     h1, p {

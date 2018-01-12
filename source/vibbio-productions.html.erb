@@ -12,6 +12,11 @@ title: VIBBIO Productions
     <div class="half-circle"></div>
 </div>
 
-<section>
-    <div><%= partial 'page-content/productions/productions-intro.md' %></div>
+<section class="productions-intro">
+    <%= partial 'page-content/productions/productions-intro.md' %>
 </section>
+<%= partial 'partials/video-ideas' %>
+<%= partial 'partials/productions-prices' %>
+<%= partial 'partials/video-reel', :locals => {:shade => 'tinted'} %>
+<%= partial 'partials/quotes' %>
+<%= partial 'partials/customer-logos', :locals => {:shade => 'tinted'} %>

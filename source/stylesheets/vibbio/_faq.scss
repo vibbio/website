@@ -1,5 +1,5 @@
 .faq {
-    .faq-list {    
+    .faq-list {
         align-items: flex-start;
         display: flex;
         flex-direction: row;
@@ -29,9 +29,9 @@
     p {
         @extend .measure;
     }
-    li {
+    ul {
+        @extend .bullet-list;
         @extend .measure;
-        list-style: disc inside;
     }
 }
 

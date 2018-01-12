@@ -1,5 +1,4 @@
 .quotes {
-    background-color: $light-turquoise;
 
     .columns {
         align-items: flex-start;
@@ -9,7 +8,7 @@
         margin-top: modular-scale(3);
         width: 100%;
     }
-    
+
     .single-quote {
         padding: 0 2rem 2rem;
     }

@@ -20,21 +20,6 @@
         padding: 2.5rem 2rem;
         text-align: center;
     }
-    .plan:nth-child(2) {
-        margin: 0 1rem;
-        box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
-        transform: scale(1.05);
-        .price {
-            color: $turquoise;
-        }
-        li {
-            font-weight: bold;
-            color: $anthracite;
-        }
-        .button {
-            @extend .vibbio-primary-button;
-        }
-    }
     .price {
         font-family: $heading-font-family;
         color: $petroleum;
@@ -54,3 +39,19 @@
         }
     }
 }
+
+.plans .plans .plan:nth-child(2) {
+        margin: 0 1rem;
+        box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+        transform: scale(1.05);
+        .price {
+            color: $turquoise;
+        }
+        li {
+            font-weight: bold;
+            color: $anthracite;
+        }
+        .button {
+            @extend .vibbio-primary-button;
+        }
+    }
