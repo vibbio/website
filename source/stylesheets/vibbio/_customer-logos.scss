@@ -1,21 +1,32 @@
 .customer-logos {
-    text-align: center;
     padding: modular-scale(5) 0px;
     background-color: $light-turquoise;
-    // background-color: white;
     h2 {
-        margin-bottom: modular-scale(3);
+        margin-bottom: modular-scale(4);
+        opacity: .8;
+    }
+    .logo-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 12.5rem);
+        grid-auto-rows: 2.5rem;
+        grid-gap: 2rem 1.5rem;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    li {
+        line-height: 1;
+        height: 2rem;
     }
     img {
-        height: 1.5rem;
-        margin: .5rem 1.5rem;
-        filter: grayscale(1.0);
-        opacity: .8;
+        max-width: 12.5rem;
+        height: 2rem;
+        width: auto;
+        opacity: .5;
         cursor: pointer;
         transition: all $base-duration $base-timing;
         &:hover {
-            filter: none;
-            opacity: 1;
+            opacity: .7;
         }
     }
 }
