@@ -1,0 +1,24 @@
+section.resources-list {
+    background-color: $light-turquoise;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem );
+    grid-gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+    h2 {
+        font-size: modular-scale(1);
+        margin-top: modular-scale(1);
+    }
+    p {
+        @extend .measure;
+    }
+    .resource {
+        @extend .card;
+        cursor: default;
+        padding: 1rem;
+        width: 20rem;
+    }
+    img {
+        margin: -1rem -1rem 0 -1rem;
+    }
+}
