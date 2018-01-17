@@ -1,0 +1,14 @@
+.no-more-barriers {
+    background-color: $light-turquoise;
+    background-image: url(../images/banner_illus_1.svg),
+                      $banner-gradient;
+    background-size: cover;
+    h2 {
+        @extend .h2;
+        color: $white;
+    }
+    p {
+        @extend .ingress;
+        color: $white;
+    }
+}

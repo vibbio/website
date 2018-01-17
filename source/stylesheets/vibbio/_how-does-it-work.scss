@@ -1,0 +1,21 @@
+.how-does-it-work {
+    h2 {
+        @extend .h2;
+    }
+    p:first-of-type {
+        @extend .ingress;
+        max-width: 100%;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    li {
+        min-width: 16em;
+        max-width: 20em;
+        width: calc(100% / 4);
+        padding: 1em 2em;
+    }
+}

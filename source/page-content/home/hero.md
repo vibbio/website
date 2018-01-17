@@ -1,3 +1,5 @@
-# VIBBIO is video production on demand
+# Supercharge your content
 
-We help brands connect with their customers through engaging video content.
+VIBBIO is a full-service workflow for video projects.
+
+With our smart tool – planning and ordering videos has never been easier!

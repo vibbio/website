@@ -1,0 +1,53 @@
+.video-reel {
+
+    h2 {
+        @extend .h2
+    }
+
+    .videos {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: modular-scale(3);
+    }
+    .video-placeholder {
+        border-radius: $base-border-radius $base-border-radius 0 0;
+    }
+    .single-video {
+        @extend .card;
+        margin: 0 1rem 2rem 1rem;
+        min-width: 230px;
+        position: relative;
+
+        &:hover .play-button {
+            fill: $turquoise;
+        }
+    }
+    .caption {
+        padding: modular-scale(1);
+        margin: 0;
+        text-align: center;
+        font-size: modular-scale(-1);
+    }
+    .customer {
+        @extend .section-heading;
+        display: block;
+        font-size: modular-scale(0);
+        margin-bottom: 1em;
+    }
+    .date {
+        color: transparentize($base-font-color, 0.3);
+        display: block;
+        margin-top: .5em;
+    }
+
+    .button {
+        @extend .vibbio-bare-button;
+        background-color: $turquoise;
+        color: $white;
+        &:hover {
+            background-color: $petroleum;
+        }
+    }
+}

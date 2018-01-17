@@ -1,15 +1,17 @@
 .plans-include {
     h1 {
         @extend .h1;
+        margin-bottom: modular-scale(2);
     }
     h2 {
         @extend .section-heading;
         text-align: left;
+        line-height: 1.8;
     }
     img {
-        height: 2rem;
-        width: 2rem;
-        margin-right: 1rem;
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1.5rem;
     }
     article {
         display: grid;

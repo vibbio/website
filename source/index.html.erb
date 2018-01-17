@@ -4,11 +4,14 @@ title: VIBBIO is video on-demand
 
 <div class="hero">
     <%= partial 'page-content/home/hero.md' %>
+    <a href="https://vimeo.com/231544979" data-lity>Watch the introduction video</a>
     <div class="half-circle"></div>
 </div>
 
 <%= partial 'partials/customer-logos' %>
-<%= partial 'partials/selling-points' %>
+<%= partial 'partials/plans-include' %>
+<%= partial 'partials/no-more-barriers' %>
+<%= partial 'partials/how-does-it-work' %>
 <%= partial 'partials/video-reel', :locals => {:shade => 'tinted'} %>
 <%= partial 'partials/stats' %>
-<%= partial 'partials/quotes' %>
+<%= partial 'partials/quotes', :locals => {:shade => 'tinted'} %>
