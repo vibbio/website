@@ -2,9 +2,10 @@
     h2 {
         @extend .h2;
     }
-    p:first-of-type {
+    p {
         @extend .ingress;
         max-width: 100%;
+        margin-bottom: modular-scale(1);
         width: 100%;
     }
     ul {
