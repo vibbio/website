@@ -59,6 +59,11 @@ form p {
 form em {
     color: transparentize($base-font-color, 0.2);
 }
+form label em {
+    font-size: modular-scale(-1);
+    margin-left: 1rem;
+    vertical-align: text-top;
+}
 button {
     @extend .vibbio-primary-button;
     margin: modular-scale(4) auto 0;
