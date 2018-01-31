@@ -25,7 +25,6 @@
     padding-bottom: 2rem;
     text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
   }
-
   a:not(.video-placeholder) {
     @extend .vibbio-inverted-button;
     text-shadow: none;
@@ -60,6 +59,9 @@
 .index .hero {
     background-image: url(../images/banner_illus_1.svg),
                       $banner-gradient;
+  p:last-of-type {
+    font-size: modular-scale(1);
+  }
 }
 .product .hero {
     background-image: url(../images/banner_illus_1.svg),
