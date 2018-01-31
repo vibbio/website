@@ -19,4 +19,11 @@
         width: calc(100% / 4);
         padding: 1em 2em;
     }
+    img {
+        display: block;
+        margin: 0 auto modular-scale(0) auto;
+        text-align: center;
+        height: 3rem;
+        width: 3rem;
+    }
 }
