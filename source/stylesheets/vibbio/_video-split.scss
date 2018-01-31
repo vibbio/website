@@ -1,21 +1,26 @@
 .video-split {
     align-items: flex-start;
-    
+
     h2 {
         @extend .h2;
+        font-size: modular-scale(2);
         text-align: left;
     }
-
+    p {
+        @extend .ingress;
+        margin: 0;
+        text-align: left;
+    }
     main {
         align-items: center;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     .content {
         width: 50%;
     }
-    .video-embed { 
-        @extend .responsive-video-50;   
+    .video-embed {
+        @extend .responsive-video-50;
         margin-left: 2rem;
     }
     @media screen and (max-width: 900px) {
