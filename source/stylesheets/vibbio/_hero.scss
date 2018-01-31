@@ -58,13 +58,16 @@
 // SPECIAL STYLES PER PAGE
 
 .index .hero {
-    background-image: url(../images/banner_2.jpg);
+    background-image: url(../images/banner_illus_1.svg),
+                      $banner-gradient;
 }
 .product .hero {
-    background-image: url(../images/banner_2.jpg);
+    background-image: url(../images/banner_illus_1.svg),
+                      $banner-gradient;
 }
 .plans .hero {
-    background-image: url(../images/banner_2.jpg);
+    background-image: url(../images/banner_illus_1.svg),
+                      $banner-gradient;
 }
 .about .hero,
 .vibbio-productions .hero {
