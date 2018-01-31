@@ -16,14 +16,16 @@
     }
     article {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, 27rem);
         grid-gap: 3rem 4rem;
+        justify-content: center;
+        width: 100%;
     }
     .feature {
         align-items: flex-start;
         display: flex;
         justify-content: flex-start;
-        width: 27rem;
+        max-width: 27rem;
     }
 }
 
