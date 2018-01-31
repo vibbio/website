@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Foldercloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="filled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Filled" transform="translate(-420.000000, -1500.000000)" stroke="#00576F" stroke-width="2">
+            <g id="Foldercloud" transform="translate(424.000000, 1508.000000)">
+                <path d="M0,10 L52,10 L52,39.0029998 C52,41.210482 50.2100423,43 48.0059907,43 L3.99400932,43 C1.78817888,43 0,41.2023415 0,39.0029998 L0,10 Z" id="Combined-Shape-Copy-43" fill="#edf4f5"></path>
+                <rect id="Rectangle-2010-Copy-10" x="0" y="6" width="52" height="4"></rect>
+                <polygon id="Rectangle-2011-Copy-9" fill="#edf4f5" points="0 0 18 0 22 6 0 6"></polygon>
+                <path d="M19.5036382,20.0178397 C19.337298,20.0060139 19.1693513,20 19,20 C15.1340068,20 12,23.1340068 12,27 C12,30.8659932 15.1340068,34 19,34 L36,34 L36,33.9775785 C38.80325,33.7249641 41,31.3690213 41,28.5 C41,25.5558473 38.6866904,23.1519969 35.7785535,23.0069315 C34.871657,18.9954727 31.2856436,16 27,16 C23.8718972,16 21.1165278,17.595862 19.5036382,20.0178397 Z" id="Combined-Shape-Copy-37" fill="#FFFFFF"></path>
+                <path d="M23.9497475,22.0502525 C22.6829966,20.7835017 20.9329966,20 19,20" id="Oval-24-Copy-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
