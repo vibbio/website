@@ -1,17 +1,20 @@
-.plans {
-    padding-bottom: modular-scale(4);
-    .subscritions h1 {
+.subscriptions {
+    padding-bottom: 0;
+    h1 {
         @extend .h1;
-        margin-bottom: 1.3em;
+        margin-bottom: 1.5em;
     }
     h2 {
         @extend .section-heading
+    }
+    em {
+        opacity: .7;
     }
     .wrapper {
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
-        margin-bottom: modular-scale(4);
+        margin-bottom: modular-scale(2);
         width: 100%;
         flex-wrap: wrap;
     }
@@ -24,10 +27,22 @@
     .price {
         font-family: $heading-font-family;
         color: $petroleum;
-        font-size: modular-scale(4);
+        font-size: modular-scale(3);
+        line-height: 1;
         margin: 0;
-        line-height: 2;
+        padding: modular-scale(0) 0 1rem;
         white-space: nowrap;
+    }
+    .price-small {
+        font-family: $heading-font-family;
+        color: $petroleum;
+        font-size: modular-scale(1);
+        line-height: 1;
+        padding-bottom: modular-scale(1);
+        white-space: nowrap;
+    }
+    .valuta {
+        font-size: modular-scale(-3);
     }
     .signup-button {
         @extend .vibbio-bare-button;
@@ -40,20 +55,28 @@
             color: $white;
         }
     }
+    .multi {
+        background-color: $light-turquoise;
+        margin: modular-scale(4) -4rem 0;
+        padding: modular-scale(4) 4rem modular-scale(4);
+        h2 {
+            margin-bottom: modular-scale(1);
+        }
+    }
 }
 
-.plans .plans .plan:nth-child(2) {
+.subscriptions .wrapper .plan:nth-child(2) {
         margin: 0 1rem;
         box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
         transform: scale(1.05);
-        .price {
+        .price, .price-small {
             color: $turquoise;
         }
         li {
             font-weight: bold;
             color: $anthracite;
         }
-        .button {
+        .signup-button {
             @extend .vibbio-primary-button;
         }
     }
