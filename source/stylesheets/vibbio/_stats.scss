@@ -15,14 +15,15 @@
         width: 100%;
 
         & div {
-        margin: 0 2rem modular-scale(2);
-        width: 18.75rem;
+        margin: 0 1.5rem modular-scale(2);
+        min-width: 9.4rem;
+        width: calc(100% / 3 - 3rem);
         }
     }
 
     h3 {
         font-family: $heading-font-family;
-        font-size: calc(3vw + 3rem);
+        font-size: calc(3vw + 2rem);
         font-weight: 400;
         color: $turquoise;
         text-align: center;
