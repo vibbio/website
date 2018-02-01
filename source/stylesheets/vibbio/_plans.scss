@@ -59,8 +59,15 @@
         background-color: $light-turquoise;
         margin: modular-scale(4) -4rem 0;
         padding: modular-scale(4) 4rem modular-scale(4);
+        width: 100vw;
         h2 {
             margin-bottom: modular-scale(1);
+        }
+        p, a {
+            @extend .measure;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: modular-scale(0);
         }
     }
 }
@@ -69,9 +76,6 @@
         margin: 0 1rem;
         box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
         transform: scale(1.05);
-        .price, .price-small {
-            color: $turquoise;
-        }
         li {
             font-weight: bold;
             color: $anthracite;
