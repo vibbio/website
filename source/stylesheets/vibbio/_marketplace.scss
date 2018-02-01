@@ -1,0 +1,44 @@
+.marketplace {
+    background-color: $light-turquoise;
+    h2 {
+        @extend .h2;
+    }
+    h3 {
+        margin-bottom: modular-scale(1);
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        justify-content: center;
+        margin-bottom: modular-scale(3);
+        max-width: 40rem;
+    }
+    li {
+        max-width: 20rem;
+    }
+    ul:last-of-type {
+        align-items: center;
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        & li {
+            grid-row-end: span 2;
+            max-width: 40rem;
+        }
+    }
+    .title {
+        @extend .section-heading;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .marketplace ul {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+        grid-column-gap: 0;
+    }
+    .marketplace ul:last-of-type li {
+        max-width: 20rem;
+    }
+}
