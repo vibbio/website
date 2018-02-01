@@ -16,22 +16,31 @@
     }
     article {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 27rem);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem 4rem;
         justify-content: center;
-        width: 100%;
     }
     .feature {
         align-items: flex-start;
         display: flex;
         justify-content: flex-start;
+        width: 100%;
         max-width: 27rem;
     }
 }
 
-@media screen and (max-width: 1040px) {
-    .plans-include article {
+@media screen and (max-width: 800px) {
+    .smart-tools article {
         grid-template-columns: 1fr;
         grid-gap: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .smart-tools .feature {
+        flex-direction: column;
+    }
+    .smart-tools img {
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
     }
 }

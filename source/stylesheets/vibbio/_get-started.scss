@@ -16,10 +16,9 @@
     }
     article {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 27rem);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem 4rem;
         justify-content: center;
-        width: 100%;
     }
     .feature {
         align-items: flex-start;
@@ -29,9 +28,18 @@
     }
 }
 
-@media screen and (max-width: 1040px) {
-    .plans-include article {
+@media screen and (max-width: 800px) {
+    .get-started article {
         grid-template-columns: 1fr;
         grid-gap: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .get-started .feature {
+        flex-direction: column;
+    }
+    .get-started img {
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
     }
 }
