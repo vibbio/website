@@ -63,11 +63,19 @@
         h2 {
             margin-bottom: modular-scale(1);
         }
+        .wrapper {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
         p, a {
             @extend .measure;
-            display: block;
-            margin: 0 auto;
             padding-bottom: modular-scale(0);
+        }
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 3rem;
         }
     }
 }
