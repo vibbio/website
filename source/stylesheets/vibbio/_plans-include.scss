@@ -1,0 +1,34 @@
+.plans-include {
+    @extend .how-does-it-work;
+    h2 {
+        margin-bottom: modular-scale(1);
+    }
+    h3 {
+        @extend .section-heading;
+    }
+    p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    #open-sign {
+        transform: rotate(9deg);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .how-does-it-work ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 4rem;
+
+    }
+}
+@media screen and (max-width: 520px) {
+    .plans-include ul {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        width: 100%;
+    }
+    .plans-include li {
+        margin: 0 auto;
+    }
+}
