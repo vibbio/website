@@ -81,15 +81,28 @@
 }
 
 .subscriptions .wrapper .plan:nth-child(2) {
-        margin: 0 2rem;
-        border: 1px solid transparentize($dark-petroleum, 0.7);
-        box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
-        transform: scale(1.05);
-        li {
-            font-weight: bold;
-            color: $anthracite;
+    margin: 0 2rem;
+    border: 1px solid transparentize($dark-petroleum, 0.7);
+    box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+    transform: scale(1.05);
+    li {
+        font-weight: bold;
+        color: $anthracite;
+    }
+    .signup-button {
+        @extend .vibbio-primary-button;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    .subscriptions .multi {
+        img {
+            display: none;
         }
-        .signup-button {
-            @extend .vibbio-primary-button;
+        p:first-of-type, a {
+            display: block;
+            text-align: center;
+            width: 100%;
         }
     }
+}

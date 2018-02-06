@@ -71,7 +71,8 @@
     }
     .faq .faq-list {
         justify-content: flex-start;
-        grid-template-columns: 27rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem 0;
 
     }
     .faq .question {
