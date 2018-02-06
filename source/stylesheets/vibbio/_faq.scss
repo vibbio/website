@@ -1,45 +1,80 @@
 .faq {
+    background-color: $light-turquoise;
     .faq-list {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .col {
-        width: 25rem;
-        margin-bottom: modular-scale(3);
+        margin: 0 auto;
     }
     h1 {
         @extend .h1;
+        margin-bottom: modular-scale(1);
     }
     h2 {
         @extend .section-heading;
-        text-align: left;
-    }
-    h2:first-of-type {
-        margin-top: 0;
+        margin: modular-scale(3) 0 modular-scale(1) 0;
+        width: 100%;
+        grid-column: 1 / 3;
     }
     h3 {
-        @extend .h3;
-        font-weight: 400;
-        margin: 2rem 0 1rem 0;
+        @extend .narrow-measure;
+        color: $petroleum;
+        font-family: $base-font-family;
+        font-weight: bold;
+        font-size: $base-font-size;
+        line-height: 1.4;
+        max-width: 27rem;
+        text-align: left;
     }
     p {
-        @extend .measure;
+        @extend .narrow-measure;
     }
     ul {
         @extend .bullet-list;
-        @extend .measure;
+        @extend .narrow-measure;
+        padding-bottom: modular-scale(0);
+    }
+    .faq-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .question {
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+@supports (display: grid) {
+    .faq .faq-list {
+        display: grid;
+        grid-gap: 2rem 4rem;
+        grid-template-columns: 27rem 27rem;
+        justify-content: center;
+    }
+    .faq .question {
+        margin: 0;
+        max-width: 27rem;
+    }
+
+}
+@media screen and (max-width: 1190px) {
+    @supports (display: grid) {
+        .faq .faq-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .faq .question {
+            max-width: 26em;
+            width: 100%;
+        }
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 860px) {
+    .faq h1 {
+        text-align: center;
+    }
     .faq .faq-list {
         justify-content: flex-start;
+        grid-template-columns: 27rem;
+
     }
-    .faq .col {
+    .faq .question {
         width: 100%;
     }
 }

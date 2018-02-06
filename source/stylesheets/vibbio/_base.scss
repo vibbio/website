@@ -38,10 +38,13 @@
 .measure {
     max-width: 30em;
 }
+.narrow-measure {
+    max-width: 26em;
+}
 .bullet-list {
     li:before {
         content: '●';
-        color: $turquoise;
+        color: $petroleum;
         position: relative;
         display: inline-block;
         margin-right: 0.5em;
