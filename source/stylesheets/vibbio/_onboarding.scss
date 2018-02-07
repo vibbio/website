@@ -1,0 +1,48 @@
+.onboarding-intro {
+    background-image: url(../images/banner_illus_1.svg),
+                      $banner-gradient;
+    h1 {
+        color: $white;
+        font-size: modular-scale(4);
+        margin: modular-scale(2) 4rem modular-scale(0);
+        text-align: center;
+        text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
+    }
+    p {
+        @extend .ingress;
+        color: $white;
+        max-width: 27em;
+        padding-bottom: 2rem;
+        text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
+    }
+}
+.onboarding-sessions {
+    @extend .get-started;
+    .wrapper {
+        max-width: 78rem;
+    }
+    ul {
+        @extend .bullet-list;
+    }
+    p {
+        margin: 0;
+    }
+    em {
+        font-size: modular-scale(-1);
+        line-height: 1.2;
+        opacity: 0.8;
+    }
+}
+@media screen and (max-width: 700px) {
+    .onboarding-intro {
+        & h1 {
+        font-size: modular-scale(3);
+        margin: 0 0 modular-scale(0) 0;
+        padding: 0 1rem;
+        }
+        & p {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+    }
+}

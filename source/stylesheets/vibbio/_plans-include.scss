@@ -5,10 +5,12 @@
     }
     h3 {
         @extend .section-heading;
+        line-height: 1.6;
         padding-top: modular-scale(1);
     }
     p {
         font-size: 1rem;
+        margin-bottom: 0.5rem;
         text-align: justify;
     }
     #open-sign {

@@ -1,0 +1,81 @@
+.onboarding-options {
+    h2 {
+        @extend .h2;
+        margin-bottom: modular-scale(0);
+    }
+    h3 {
+        @extend .section-heading
+    }
+    em {
+        opacity: .7;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: modular-scale(3);
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .plan {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        border-radius: $base-border-radius;
+        cursor: default;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+
+        & ul {
+            flex-grow: 2;
+        }
+    }
+    .price {
+        font-family: $heading-font-family;
+        color: $petroleum;
+        font-size: modular-scale(3);
+        line-height: 1;
+        margin: 0;
+        padding: modular-scale(0) 0 1rem;
+        white-space: nowrap;
+    }
+    .price-small {
+        font-family: $heading-font-family;
+        color: $petroleum;
+        font-size: modular-scale(1);
+        line-height: 1;
+        padding-bottom: modular-scale(1);
+        white-space: nowrap;
+    }
+    .valuta {
+        font-size: modular-scale(-3);
+    }
+    .signup-button {
+        @extend .vibbio-bare-button;
+        border: 1px solid transparentize($anthracite, 0.7);
+        color: $anthracite;
+        margin-top: 2.5rem;
+        &:hover {
+            background-color: $turquoise;
+            border: 1px solid $turquoise;
+            color: $white;
+        }
+    }
+}
+
+.onboarding-options .wrapper .plan:nth-child(2) {
+    margin: 0 2rem;
+    border: 1px solid transparentize($dark-petroleum, 0.7);
+    box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
+    transform: scale(1.05);
+    li {
+        font-weight: bold;
+        color: $anthracite;
+    }
+    .signup-button {
+        @extend .vibbio-primary-button;
+    }
+}
