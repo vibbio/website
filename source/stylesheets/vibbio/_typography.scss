@@ -13,10 +13,10 @@ h1, .h1 {
     font-size: modular-scale(3);
     color: $dark-petroleum;
     text-align: center;
+}
 h2 {
     @extend .h2;
     font-size: modular-scale(2);
-}
 }
 h3, .h3 {
     font-size: modular-scale(1);
