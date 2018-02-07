@@ -1,11 +1,12 @@
 .marketplace {
-    background-color: $light-turquoise;
     h2 {
         @extend .h2;
     }
-    ul {
+    h3 {
+        @extend .section-heading;
+        text-align: left;
     }
-    li {
+    .section {
         margin-bottom: modular-scale(2);
     }
     img {
@@ -14,21 +15,26 @@
         width: 2rem;
         margin-right: 1.5rem;
     }
-    .title {
-        @extend .section-heading;
-        text-align: left;
-    }
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .service-areas {
+    .area {
+        align-items: flex-start;
         display: flex;
         margin: 0 2rem modular-scale(3) 2rem;
-        max-width: 27rem;
+        max-width: 24rem;
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 450px) {
+    .marketplace .area {
+        flex-direction: column;
+        margin: 0 0 modular-scale(2) 0;
+    }
+    .marketplace img {
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+    }
 }

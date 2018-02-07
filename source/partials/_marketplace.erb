@@ -1,45 +1,45 @@
-<section class="marketplace">
+<section class="marketplace <%= shade ||= '' %> ">
     <h2>The Marketplace</h2>
     <p class="ingress">Additional services such as filming, copywriting and stock materials are available to book directly within your user account.</p>
     <div class="wrapper">
-        <div class="service-areas">
+        <div class="area">
             <%= image_tag 'icons/moviecut.svg', :alt => 'Movie cut board icon' %>
             <ul>
-                <li>
-                    <p class="title">Video Crew</p>
+                <li class="section">
+                    <h3>Video Crew</h3>
                     <p>Film shoot with a crew of 2 producers; to capture several angles and sound.</p>
                     <p>Ideal for filming events, interviews and acted scenarios.</p>
                 </li>
-                <li>
-                    <p class="title">Single shoot</p>
+                <li class="section">
+                    <h3>Single shoot</h3>
                     <p>Filming with 1 producer.</p>
                     <p>Ideal for a product shoot, landscapes, people, places,
                     overviews etc.</p>
                 </li>
             </ul>
         </div>
-        <div class="service-areas">
+        <div class="area">
             <%= image_tag 'icons/wireboundbook.svg', :alt => 'Wire bound notebook icon' %>
             <ul>
-                <li>
-                    <p class="title">Content Adaption</p>
+                <li class="section">
+                    <h3>Content Adaption</h3>
                     <p>Adapting an existing article, paper or case to a short video.</p>
                 </li>
-                <li>
-                    <p class="title">Copywriting</p>
+                <li class="section">
+                    <h3>Copywriting</h3>
                     <p>Create complete content for a video from scratch.</p>
                 </li>
-                <li>
-                    <p class="title">Content Workshop</p>
+                <li class="section">
+                    <h3>Content Workshop</h3>
                     <p>Workshop to solve messaging, tone-of-voice and text for a campaign.</p>
                 </li>
             </ul>
         </div>
-        <div class="service-areas">
+        <div class="area">
             <%= image_tag 'icons/picturephoto.svg', :alt => 'Icon of a photo inside a frame' %>
             <ul>
-                <li>
-                    <p class="title">Stock material</p>
+                <li class="section">
+                    <h3>Stock material</h3>
                     <p>We have a range of short clips and images available to purchase, with direct transfer to your user library</p>
                 </li>
             </ul>

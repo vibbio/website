@@ -1,41 +1,13 @@
 .get-started {
-    h1 {
-        @extend .h1;
-        margin-bottom: modular-scale(2);
-    }
+    @extend .marketplace;
+
     h2 {
-        @extend .section-heading;
-        text-align: left;
-        line-height: 1.6;
-    }
-    img {
-        display: block;
-        height: 2rem;
-        width: 2rem;
-        margin-right: 1.5rem;
-    }
-    article {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3rem 4rem;
-        justify-content: center;
-    }
-    .feature {
-        align-items: flex-start;
-        display: flex;
-        justify-content: flex-start;
-        max-width: 27rem;
+        margin-bottom: modular-scale(2);
     }
 }
 
-@media screen and (max-width: 800px) {
-    .get-started article {
-        grid-template-columns: 1fr;
-        grid-gap: none;
-    }
-}
 @media screen and (max-width: 450px) {
-    .get-started .feature {
+    .get-started .area {
         flex-direction: column;
     }
     .get-started img {
