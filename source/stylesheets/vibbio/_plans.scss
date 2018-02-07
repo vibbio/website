@@ -1,14 +1,40 @@
 .subscriptions {
     padding-bottom: 0;
-    h1 {
-        @extend .h1;
-        margin-bottom: 1.5em;
-    }
     h2 {
+        @extend .h2;
+        margin-bottom: modular-scale(0);
+    }
+    h3 {
         @extend .section-heading
     }
     em {
         opacity: .7;
+    }
+
+    .billing-period {
+        display: flex;
+        justify-content: center;
+        margin-bottom: modular-scale(3);
+        width: 40%;
+
+        a {
+            @extend .section-heading;
+            border-bottom: 3px solid transparentize($dark-petroleum, 0.5);
+            cursor: pointer;
+            line-height: 2rem;
+            opacity: .5;
+            padding: 0 1rem;
+            text-decoration: none;
+            transition: all $base-duration $base-timing;
+        }
+        a:hover {
+            opacity: 1;
+        }
+        a.selected {
+            opacity: 1;
+            border-bottom: 3px solid $turquoise;
+
+        }
     }
     .wrapper {
         display: flex;
