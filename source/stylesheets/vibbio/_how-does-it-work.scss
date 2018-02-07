@@ -11,7 +11,7 @@
     ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 2.5rem;
+        grid-column-gap: 4rem;
         margin-bottom: modular-scale(2);
     }
     li {
@@ -32,7 +32,8 @@
         grid-row-gap: 4rem;
 
     }
-}@media screen and (max-width: 520px) {
+}
+@media screen and (max-width: 520px) {
     .how-does-it-work ul {
         grid-template-columns: 1fr;
         grid-column-gap: 0;
