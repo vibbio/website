@@ -3,47 +3,32 @@
     h2 {
         @extend .h2;
     }
-    h3 {
-        color: $dark-petroleum;
-        margin-bottom: modular-scale(1);
-    }
     ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3rem 4rem;
-        justify-content: center;
-        margin-bottom: modular-scale(3);
     }
     li {
-        margin-left: 3.5rem;
-        max-width: 27rem;
+        margin-bottom: modular-scale(2);
     }
-    ul:last-of-type {
-        align-items: center;
-        grid-gap: 0;
-        grid-template-columns: 1fr;
-        & li {
-            grid-row-end: span 2;
-            max-width: 54rem;
-        }
+    img {
+        display: block;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1.5rem;
     }
     .title {
         @extend .section-heading;
         text-align: left;
     }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service-areas {
+        display: flex;
+        margin: 0 2rem modular-scale(3) 2rem;
+        max-width: 27rem;
+    }
 }
 
 @media screen and (max-width: 570px) {
-    .marketplace ul {
-        grid-template-columns: 1fr;
-        grid-row-gap: 3rem;
-        grid-column-gap: 0;
-
-        & li {
-            margin-left: 0;
-        }
-    }
-    .marketplace ul:last-of-type li {
-        max-width: 20rem;
-    }
 }
