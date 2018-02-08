@@ -24,6 +24,10 @@
         height: 3rem;
         width: 3rem;
     }
+    img#paws {
+        animation: coucou 5s linear infinite alternate;
+        transform-origin: bottom;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -41,5 +45,11 @@
     }
     .how-does-it-work li {
         margin: 0 auto;
+    }
+}
+
+@keyframes coucou {
+    20%, 100% {
+        transform: scale3d(1, 1.1, 1)
     }
 }

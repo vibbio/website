@@ -11,10 +11,12 @@
     p {
         font-size: 1rem;
         margin-bottom: 0.5rem;
-        text-align: justify;
+        text-align: left;
     }
     #open-sign {
         transform: rotate(9deg);
+        transform-origin: top center;
+        animation: sway 5s cubic-bezier(.68,-0.55,.27,1.55) infinite alternate;
     }
 }
 
@@ -33,5 +35,11 @@
     }
     .plans-include li {
         margin: 0 auto;
+    }
+}
+
+@keyframes sway {
+    20%, 100% {
+        transform: rotate(-9deg);
     }
 }
