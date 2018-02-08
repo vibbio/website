@@ -1,3 +1,11 @@
 <section class="mission">
-    <div><%= partial 'page-content/about/mission.md' %></div>
+    <div class="story"><%= partial 'page-content/about/mission.md' %></div>
+    <div class="video-grid">
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252846169', :image_url => 'http://placebeyonce.com/200-200', :alt_text => 'Voice Control'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671319', :image_url => 'http://placebeyonce.com/200-200', :alt_text => '3D Printing'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671328', :image_url => 'http://placebeyonce.com/200-200', :alt_text => 'Blockchain'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671340', :image_url => 'http://placebeyonce.com/200-200', :alt_text => 'InsurTech'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671351', :image_url => 'http://placebeyonce.com/200-200', :alt_text => 'Stem Cells'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671365', :image_url => 'http://placebeyonce.com/200-200', :alt_text => 'Future of education'} %>
+    </div>
 </section>
