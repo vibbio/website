@@ -65,11 +65,11 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    div:not(.play-button) {
+/*     div:not(.play-button) {
         width: calc(50% - 1rem);
         max-width: 50vw;
     }
-}
+ */}
 
 .card {
     background-color: $white;

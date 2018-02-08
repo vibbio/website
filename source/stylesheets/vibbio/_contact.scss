@@ -10,9 +10,14 @@
     }
     .split {
         align-items: flex-start;
+        justify-content: center;
+        & .map {
+            filter: grayscale(50%);
+            width: 600px;
+        }
     }
-    .map {
-        overflow: hidden;
+    .contact-details {
+        margin: 0 2rem;
     }
     ul {
         margin-bottom: modular-scale(2);
@@ -25,11 +30,15 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
+    .contact .split {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
     .contact h2 {
         margin-bottom: modular-scale(1);
     }
     .contact p:last-of-type {
-        margin-bottom: modular-scale(2);
+        margin-bottom: modular-scale(4);
     }
 }
