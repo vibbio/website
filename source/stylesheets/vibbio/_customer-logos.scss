@@ -1,37 +1,36 @@
 .customer-logos {
-    padding: modular-scale(5) 0px;
+    padding: modular-scale(4) 0px;
     background-color: $light-turquoise;
     h2 {
         margin-bottom: modular-scale(4);
     }
     .logo-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 12.5rem);
-        grid-auto-rows: 2.5rem;
-        grid-gap: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        justify-items: center;
         align-items: center;
     }
     li {
-        align-items: center;
         display: flex;
-        height: 2.5rem;
+        align-items: center;
+        flex-direction: column;
         justify-content: center;
+        height: 2rem;
+        margin: 1rem 2rem;
     }
     img {
         max-width: 10rem;
-        height: 2.5rem;
+        height: 2rem;
         width: auto;
         opacity: .5;
         transition: all $base-duration $base-timing;
         &:hover {
             opacity: .7;
         }
-        &#Adecco, &#Visma {
-            height: 1.75rem;
+        &#Adecco, &#Visma, &#Microsoft {
+            height: 1.3rem;
         }
-        &#Tripletex {
+        &#Tripletex, &#Orkla {
             margin-top: -.5rem;
         }
     }
