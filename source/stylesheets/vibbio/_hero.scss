@@ -31,26 +31,34 @@
   }
 
   .half-circle {
-    background-color: $white;
-    border-radius: 50%;
-    bottom: -2rem;
-    height: 4rem;
-    left: calc(50% - 2rem);
+    bottom: 2rem;
+    height: 2rem;
+    left: calc(50% - 1rem);
     position: absolute;
-    width: 4rem;
-    animation: bounce 3s ease-in-out infinite;
+    width: 2rem;
+    animation: move 2s ease-in-out infinite;
+
+    img {
+      height: 2rem;
+      width: 2rem;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 600ms;
+    }
   }
 }
 
-@keyframes bounce {
+@keyframes move {
   0% {
-    transform: translate3d(0, 0, 0)
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(0, 1rem, 0)
+    opacity: 1;
   }
   100% {
-    transform: translate3d(0, 0, 0)
+    opacity: 0;
+    transform: translate3d(0, 1.5rem, 0);
   }
 }
 
