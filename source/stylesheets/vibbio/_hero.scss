@@ -27,7 +27,18 @@
   }
   a:not(.video-placeholder) {
     @extend .vibbio-inverted-button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-shadow: none;
+    svg {
+      height: 1.5rem;
+      margin-right: .5rem;
+      transition: fill $base-duration $base-timing;
+    }
+    &:hover svg {
+      fill: #FFF;
+    }
   }
 
   .half-circle {

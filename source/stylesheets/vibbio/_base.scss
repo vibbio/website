@@ -34,6 +34,20 @@
         color: $white;
     }
 }
+.vibbio-video-button {
+    @extend .vibbio-inverted-button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      height: 1.5rem;
+      margin-right: .5rem;
+      transition: fill $base-duration $base-timing;
+    }
+    &:hover svg {
+      fill: #FFF;
+    }
+}
 
 .measure {
     max-width: 30em;
