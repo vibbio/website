@@ -57,24 +57,24 @@
 // SPECIAL STYLES PER PAGE
 
 .index .hero {
-    background-image: url(../images/banner_illus_1.svg),
-                      $banner-gradient;
+    background-image: $banner-gradient-overlay,
+                      url(../images/hero/so-me.jpg);
   p:last-of-type {
     font-size: modular-scale(1);
   }
 }
 .product .hero {
-    background-image: url(../images/banner_illus_1.svg),
-                      $banner-gradient;
+    background-image: $banner-gradient-overlay,
+                      url(../images/hero/mobile-back.jpg);
 }
 .plans .hero {
-    background-image: url(../images/banner_illus_1.svg),
-                      $banner-gradient;
+    background-image: $banner-gradient-overlay,
+                      url(../images/hero/mobile-front.jpg);
 }
 .about .hero,
 .vibbio-productions .hero {
-    background-image: url(../images/banner_illus_1.svg),
-                      $banner-gradient;
+    background-image: $banner-gradient-overlay,
+                      url(../images/hero/desk.jpg);
   .split {
     justify-content: space-around;
     margin: 0 modular-scale(4);
@@ -101,7 +101,7 @@
   }
 }
 .community .hero {
-  background-image: url(../images/banner_illus_1.svg),
+  background-image: url(../images/hero/banner_illus_1.svg),
                       $banner-gradient;
   height: auto;
   border-bottom: none;
@@ -114,7 +114,7 @@
   }
 }
 .x404 .hero {
-  background-image: url(../images/banner_illus_1.svg),
+  background-image: url(../images/hero/banner_illus_1.svg),
                     $banner-gradient;
   border-bottom: none;
 }
