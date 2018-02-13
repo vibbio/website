@@ -40,7 +40,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        margin-bottom: modular-scale(2);
+        margin-bottom: modular-scale(4);
         width: 100%;
         flex-wrap: wrap;
     }
@@ -66,6 +66,9 @@
         line-height: 1;
         padding-bottom: modular-scale(1);
         white-space: nowrap;
+    }
+    .comment {
+        @extend .fineprint;
     }
     .valuta {
         font-size: modular-scale(-3);
