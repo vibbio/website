@@ -1,24 +1,30 @@
 .benefits {
-    align-items: flex-start;
     background-color: $light-turquoise;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: modular-scale(4) 4rem;
 
     h2 {
         @extend .section-heading;
         text-align: left;
     }
-    div {
+    p {
+        line-height: 1.4;
+        width: 16em;
+    }
+    .wrapper {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1440px;
+        padding: modular-scale(4) 4rem;
+        width: 100%;
+    }
+    .item {
         display: flex;
         flex-direction: column;
         padding: 1rem;
         min-width: 16em;
         width: calc(100% / 4);
-    }
-    p {
-        line-height: 1.4;
-        width: 16em;
     }
 }
 @media screen and (min-width: 650px) {

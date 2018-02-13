@@ -89,6 +89,7 @@
   .split {
     justify-content: space-around;
     margin: 0 modular-scale(4);
+    max-width: 1440px;
     width: 100%;
     h1 {
       margin: 0;

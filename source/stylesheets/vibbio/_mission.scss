@@ -1,7 +1,7 @@
 .mission {
     align-items: flex-start;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
     img {
         width: 100%;
@@ -9,7 +9,9 @@
         overflow: hidden;
     }
     h2 {
-        @extend .h3;
+        color: $petroleum;
+        font-size: modular-scale(3);
+        font-weight: 400;
         text-align: left;
     }
     p {
@@ -22,14 +24,15 @@
     }
     .story {
         width: 50%;
-        padding-right: 1rem;
+        max-width: 680px;
+        padding-right: 2rem;
     }
     .video-grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 680px;
-        padding-left: 1rem;
+        max-width: 800px;
+        padding-left: 2rem;
         width: 50%;
 
         & .video-embed {

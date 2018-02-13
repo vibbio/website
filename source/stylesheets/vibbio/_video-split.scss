@@ -1,5 +1,7 @@
 .video-split {
-    align-items: flex-start;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 
     h2 {
         @extend .h2;
@@ -10,6 +12,11 @@
         @extend .ingress;
         margin: 0;
         text-align: left;
+    }
+    p:first-of-type {
+        color: $petroleum;
+        font-family: $heading-font-family;
+        margin-bottom: modular-scale(0);
     }
     main {
         align-items: center;
