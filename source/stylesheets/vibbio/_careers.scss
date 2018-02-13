@@ -6,6 +6,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        & > a {
+            color: $base-font-color;
+            text-decoration: none;
+        }
     }
 
     h2 {
@@ -15,10 +19,6 @@
         @extend .section-heading;
         margin-top: modular-scale(4);
         margin-bottom: modular-scale(3);
-    }
-    a {
-        color: $base-font-color;
-        text-decoration: none;
     }
     .job-card {
         @extend .card;

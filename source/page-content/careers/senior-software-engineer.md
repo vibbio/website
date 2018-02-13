@@ -1,29 +1,34 @@
-# Senior Web Developer
+# Senior Software Engineer
 
-## About us
+## The role
 
-VIBBIO is a fast-growing tech startup, located in central Oslo. We’re building a marketplace, where businesses can order video production on-demand, directly from their user account. Our vision is to make smart video accessible, affordable and automatic. We are already working with big clients such as Microsoft, Visma, Aker BioMarine and Orkla
+We are hiring an experienced software engineer to strengthen our product team. You will work on all aspects of VIBBIO’s current product, from infrastructure all the way up the stack to the client, as well as any new ones we decide to explore.
 
-We’re a small team of four building the platform today. We take pride in our work, and aim to provide our customers with a delightful experience. We have the freedom to make our own decisions.
+Our office is in central Oslo, in the middle of trendy Grünerløkka, but you are free to work from anywhere you want as long as you are productive and able to communicate with the rest of the team.
 
-We work closely with our in-house team of video and content producers whose lives we want to make infinitely more enjoyable.
+All of us are free to choose our own tools to get the job done. We’re running all of our stack on Google Cloud, where we make use of a broad set of the available technologies. You will have the opportunity to work with Cloud Functions, Google App Engine, Google Compute Engine, and many of the available Cloud AI APIs. We do not expect you to already have experience with these technologies, but you should be as excited to learn as we are.
 
-## Who we'e looking for
+We write code in Javascript, Python, and Java, and we may add other languages where it makes sense. You will have the freedom to research and make the case where you see the opportunity.
 
-You have been around the block for a couple of years, probably worked at a couple of different places, and you have experience with a number of different technologies and languages, either from work or play.
+We believe that diversity, creativity and curiosity is what drives us towards innovation, not the things we already know today. If that is your jam, we want to hear from you.
 
-You choose technology based on the task you need to accomplish rather than dogmatic beliefs. You are happiest on the backend but are comfortable with writing client-side Javascript. You have a thought or two on the upsides and downsides of different client-server-architectures
+Send your cover letter, CV and some code samples to [jobs@vibbio.com](mailto:jobs@vibbio.com).
 
-You are able to take on infrastructure tasks, and you take pride in lean solutions. You have experience with containerised applications or are eager to learn.
+## Responsibilities
 
-You don't have to be an expert in everything but we expect you to be able to research good solutions to the problems we decide to solve. We were thrilled if you had played with machine learning before, and had a knack for data-science.
++ Improve, develop, and maintain our current product
++ Work across teams to find new solutions to our customers’ problems
++ Understand what the business needs, and build the product based on those requirements
++ Own your work throughout the entire lifecycle, from the idea phase until it is retired from our servers
 
-But most importantly, you love to learn new things, and to dig deep when you're onto something.
+## Minimum requirements
 
-## Problems to solve
++ 5+ years of professional experience in software development
++ Fast and enthusiastic learner
++ Comfortable in at least one programming language, and willingness to learn
 
-Video production today consists of lots of repetitive manual tasks, and we strive to automate as much as possible of those. Areas we are looking at right now include captioning of interviews, facial recognition for automated placement of text overlays, and smart suggestions for cutting.
+## About Vibbio
 
-At least those are the ones we know about now.
+VIBBIO is a fast-growing tech startup, located in central Oslo. Our vision is to make smart video accessible, affordable and automatic. We are already working with big clients such as Microsoft, Visma, Aker BioMarine and Orkla.
 
-Interested? Please send your CV and application to jobs@vibbio.com.
+We’re a small, cross-functional team who is building the product today. We take pride in our work, and aim to provide our customers with a delightful experience. We work closely with our in-house team of video and content producers and our customers so we never miss a trend.
