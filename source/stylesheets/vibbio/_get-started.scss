@@ -1,10 +1,12 @@
 .get-started {
     @extend .marketplace;
-    max-width: 1440px;
     margin: 0 auto;
 
     h2 {
         margin-bottom: modular-scale(2);
+    }
+    .wrapper {
+        max-width: 78rem;
     }
 }
 
