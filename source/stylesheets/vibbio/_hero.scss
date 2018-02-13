@@ -26,7 +26,7 @@
     text-shadow: 0 1px 3px transparentize($dark-petroleum, 0.4);
   }
   a:not(.video-placeholder) {
-    @extend .vibbio-video-button;
+    @extend .vibbio-inverted-video-button;
     text-shadow: none;
   }
 

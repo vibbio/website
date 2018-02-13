@@ -35,7 +35,7 @@
         color: $white;
     }
 }
-.vibbio-video-button {
+.vibbio-inverted-video-button {
     @extend .vibbio-inverted-button;
     display: flex;
     align-items: center;
@@ -47,6 +47,17 @@
     }
     &:hover svg {
       fill: #FFF;
+    }
+}
+.vibbio-video-button {
+    @extend .vibbio-primary-button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      height: 1.5rem;
+      margin-right: .5rem;
+      transition: fill $base-duration $base-timing;
     }
 }
 
@@ -115,6 +126,9 @@ img.emoji {
   width: 1em;
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
+}
+.lity-close {
+    right: 2rem;
 }
 
 #symbol-outline {
