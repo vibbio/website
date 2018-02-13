@@ -28,7 +28,7 @@
         animation: coucou 5s linear infinite alternate;
         transform-origin: bottom;
     }
-    a {
+    a.button {
         @extend .vibbio-primary-button;
         margin-top: modular-scale(3);
     }
