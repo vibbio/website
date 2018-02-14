@@ -20,6 +20,19 @@
         margin: 0 auto;
         max-width: 1440px;
     }
+    @supports (display: grid) {
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 12.5rem ) ;
+            justify-content: center;
+            grid-gap: 1px;
+            &:nth-of-type(2) {
+                max-width: 1130px;
+                margin: 0 auto;
+            }
+        }
+    }
+
     .team-member {
         height: 12.5rem;
         width: 12.5rem;
@@ -43,6 +56,11 @@
             border-radius: 2px;
             transform: scale3d(1.1, 1.1, 1.1);
             transition: transform $base-duration $base-timing;
+        }
+    }
+    @supports (display: grid) {
+        .team-member {
+            margin: 0;
         }
     }
     .team-overlay-inner {
