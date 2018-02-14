@@ -21,23 +21,46 @@
 }
 
 @media screen and (max-width: 960px) {
-    .how-does-it-work ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 4rem;
-
-    }
-}
-@media screen and (max-width: 520px) {
+    /* Fall back for IE 11 */
     .plans-include ul {
-        grid-template-columns: 1fr;
-        grid-column-gap: 0;
+        flex-wrap: wrap;
         width: 100%;
     }
     .plans-include li {
-        margin: 0 auto;
+        margin-bottom: 0;
+        width: calc(50% - 4rem);
+    }
+    @supports (display: grid) {
+        .plans-include ul {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 4rem;
+        }
+        .plans-include li {
+            width: 100%;
+        }
     }
 }
-
+@media screen and (max-width: 520px) {
+    /* Fall back for IE 11 */
+    .plans-include ul {
+        flex-direction: column;
+        margin-top: modular-scale(2);
+    }
+    .plans-include li {
+        margin: 0 auto modular-scale(3);
+        width: 100%;
+    }
+    @supports (display: grid) {
+        .plans-include ul {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+            width: 100%;
+        }
+        .plans-include li {
+            margin: 0 auto;
+        }
+    }
+}
 @keyframes sway {
     20%, 100% {
         transform: rotate(-9deg);

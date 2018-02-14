@@ -8,14 +8,29 @@
         margin-bottom: modular-scale(1);
         width: 100%;
     }
+
+    /* Fall back for IE 11 */
     ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 4rem;
+        display: flex;
+        justify-content: center;
         margin-bottom: modular-scale(2);
     }
     li {
+        margin: 0 2rem;
         max-width: 20em;
+    }
+
+    @supports (display: grid) {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 4rem;
+            margin-bottom: modular-scale(2);
+        }
+        li {
+            margin: 0;
+            max-width: 20em;
+        }
     }
     img {
         display: block;
@@ -35,21 +50,46 @@
 
 }
 
-@media screen and (max-width: 960px) {
-    .how-does-it-work ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 4rem;
 
-    }
-}
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 960px) {
+    /* Fall back for IE 11 */
     .how-does-it-work ul {
-        grid-template-columns: 1fr;
-        grid-column-gap: 0;
+        flex-wrap: wrap;
         width: 100%;
     }
     .how-does-it-work li {
-        margin: 0 auto;
+        margin-bottom: modular-scale(4);
+        width: calc(50% - 4rem);
+    }
+    @supports (display: grid) {
+        .how-does-it-work ul {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 4rem;
+        }
+        .how-does-it-work li {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 520px) {
+    /* Fall back for IE 11 */
+    .how-does-it-work ul {
+        flex-direction: column;
+        margin-top: modular-scale(2);
+    }
+    .how-does-it-work li {
+        margin: 0 auto modular-scale(3);
+        width: 100%;
+    }
+    @supports (display: grid) {
+        .how-does-it-work ul {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+            width: 100%;
+        }
+        .how-does-it-work li {
+            margin: 0 auto;
+        }
     }
 }
 
