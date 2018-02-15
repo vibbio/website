@@ -1,7 +1,4 @@
 .mission {
-    // align-items: flex-start;
-    // flex-direction: row;
-    // justify-content: center;
     img {
         width: 100%;
         border-radius: 2px;
@@ -28,25 +25,7 @@
         column-count: 2;
         column-width: 26rem;
         column-gap: 4rem;
-        margin-bottom: modular-scale(6);
         max-width: 56rem;
-    }
-    .video-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin: 0 auto;
-        width: calc(100% - 8rem);
-
-        & .video-embed {
-            width: 200px;
-            height: 200px;
-            margin: 0 0.5rem 1rem 0.5rem;
-            transition: all $base-duration $base-timing;
-        }
-        & .video-embed:hover {
-            box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
-        }
     }
 }
 
@@ -57,9 +36,6 @@
             justify-content: center;
             width: 100%;
             padding: 0;
-        }
-        & .story {
-            margin-bottom: modular-scale(4);
         }
     }
 }
