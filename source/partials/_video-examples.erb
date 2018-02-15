@@ -3,30 +3,30 @@
 
     <div class="videos">
         <div class="single-video">
-        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/249385852', :image_url => 'http://placebeyonce.com/230-230', :alt_text => 'Pierre Robert + Fretex'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/255948827', :image_url => '/images/video-stills/pierre-robert.jpg', :alt_text => 'Pierre Robert video clip'} %>
             <p class="caption">
                 <span class="customer">Pierre Robert</span>
-                <!-- KOMP -->
-                <span class="date">November 2017</span>
             </p>
         </div>
         <div class="single-video">
-        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/249385347', :image_url => 'http://placebeyonce.com/230-230', :alt_text => 'Oslo Origo'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671365', :image_url => '/images/video-stills/education.jpg', :alt_text => 'The Future of Education video clip'} %>
             <p class="caption">
-                <span class="customer">Oslo Kommune</span>
-                <!-- KOMP -->
-                <span class="date">December 2017</span>
+                <span class="customer">The Future of Education</span>
             </p>
         </div>
         <div class="single-video">
-        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/249385778', :image_url => 'http://placebeyonce.com/230-230', :alt_text => 'BaneNOR'} %>
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/252671365', :image_url => '/images/video-stills/karriere.jpg', :alt_text => 'Hun Spanderer video clip'} %>
             <p class="caption">
-                <span class="customer">BaneNOR</span>
-                <!-- KOMP -->
-                <span class="date">December 2017</span>
+                <span class="customer">#HunSpanderer</span>
+            </p>
+        </div>
+        <div class="single-video">
+        <%= partial 'partials/video-embed', :locals => {:video_url => 'https://vimeo.com/250629418', :image_url => '/images/video-stills/nutrilett.jpg', :alt_text => 'Nutrilett video clip'} %>
+            <p class="caption">
+                <span class="customer">Nutrilett</span>
             </p>
         </div>
     </div>
+    <a href="<%= link_url %>" class="button"><%= button_text %></a>
 
-    <%= link_to 'How to get started', '/product#get-started', :class => 'button' %>
 </section>
