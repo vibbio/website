@@ -9,7 +9,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: modular-scale(3);
     }
     .video-placeholder {
         border-radius: $base-border-radius $base-border-radius 0 0;
@@ -40,14 +39,5 @@
         color: transparentize($base-font-color, 0.3);
         display: block;
         margin-top: .5em;
-    }
-
-    .button {
-        @extend .vibbio-bare-button;
-        background-color: $turquoise;
-        color: $white;
-        &:hover {
-            background-color: $petroleum;
-        }
     }
 }

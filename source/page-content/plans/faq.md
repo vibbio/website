@@ -4,7 +4,7 @@ Yes, absolutely! Still images work great in videos.
 </div>
 <div class="question">
 ### Can I hire someone to help me with filming or text?
-Yes. Our content and video specialists are ready to help. You can easily order all extra servies from within your account.
+Yes. Our content and video specialists are ready to help. You can easily order all extra services from within your account.
 </div>
 <div class="question">
 ### How long will it take before I get my video?

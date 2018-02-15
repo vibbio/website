@@ -153,7 +153,13 @@
 }
 @media screen and (max-width: 500px) {
   .hero h1 {
-    font-size: modular-scale(3);
+    font-size: modular-scale(2);
     padding: 0 1rem;
+  }
+  .hero p {
+    font-size: modular-scale(1);
+  }
+  .index .hero p:last-of-type {
+    display: none;
   }
 }
