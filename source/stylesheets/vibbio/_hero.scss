@@ -29,37 +29,6 @@
     @extend .vibbio-inverted-video-button;
     text-shadow: none;
   }
-
-  .half-circle {
-    bottom: 2rem;
-    height: 2rem;
-    left: calc(50% - 1rem);
-    position: absolute;
-    width: 2rem;
-    animation: move 2s ease-in-out infinite;
-
-    img {
-      height: 2rem;
-      width: 2rem;
-    }
-    &:nth-of-type(2) {
-      animation-delay: 600ms;
-    }
-  }
-}
-
-@keyframes move {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(0, 1.5rem, 0);
-  }
 }
 
 // SPECIAL STYLES PER PAGE
