@@ -1,8 +1,7 @@
 .mission {
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: center;
-
+    // align-items: flex-start;
+    // flex-direction: row;
+    // justify-content: center;
     img {
         width: 100%;
         border-radius: 2px;
@@ -18,22 +17,26 @@
         text-align: left;
         margin-bottom: modular-scale(1);
     }
-    p:last-of-type {
-        font-style: italic;
-        margin-bottom: 0;
+    p:first-of-type {
+        @extend .ingress;
+        text-align: left;
+    }
+    strong {
+        color: $petroleum;
     }
     .story {
-        width: 50%;
-        max-width: 680px;
-        padding-right: 2rem;
+        column-count: 2;
+        column-width: 26rem;
+        column-gap: 4rem;
+        margin-bottom: modular-scale(6);
+        max-width: 56rem;
     }
     .video-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        max-width: 800px;
-        padding-left: 2rem;
-        width: 50%;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: calc(100% - 8rem);
 
         & .video-embed {
             width: 200px;
@@ -42,7 +45,7 @@
             transition: all $base-duration $base-timing;
         }
         & .video-embed:hover {
-            box-shadow: 0 2px 4px rgba(186, 186, 186, .52);
+            box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
         }
     }
 }
