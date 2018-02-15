@@ -1,25 +1,52 @@
 section.resources-list {
     background-color: $light-turquoise;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 20rem );
-    grid-gap: 1rem;
     max-width: 100%;
-    width: 100%;
+
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+    @supports (display:grid) {
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 20rem );
+            grid-gap: 1rem;
+            width: 100%;
+        }
+    }
     h2 {
         font-size: modular-scale(1);
         margin-top: modular-scale(1);
     }
     p {
         @extend .measure;
+        margin-bottom: modular-scale(1);
+    }
+    p:first-of-type {
+        margin-bottom: 0;
     }
     .resource {
         @extend .card;
         cursor: default;
+        margin: .5rem;
         padding: 1rem;
         width: 20rem;
+    }
+    @supports (display:grid) {
+        .resource {
+            margin: 0;
+        }
     }
     img {
         margin: -1rem -1rem 0 -1rem;
         width: 20rem;
+    }
+    a {
+        @extend .vibbio-bare-button;
+        display: inline-block;
+        margin-top: modular-scale(1);
+        padding: 0;
     }
 }
