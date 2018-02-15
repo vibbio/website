@@ -42,3 +42,19 @@
         margin-bottom: modular-scale(4);
     }
 }
+@media screen and (max-width: 700px) {
+    .contact {
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contact .contact-details {
+        margin: 0;
+        padding: 0 4rem;
+    }
+    .contact .split .map {
+        width: 100%;
+        margin: 0 -4rem;
+        overflow: hidden;
+    }
+}
