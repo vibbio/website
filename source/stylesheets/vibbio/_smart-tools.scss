@@ -14,6 +14,10 @@
         margin-right: 1.5rem;
         margin-top: .5rem;
     }
+    a {
+        @extend .vibbio-primary-button;
+        margin-top: modular-scale(4);
+    }
 
     /* Fall back for IE 11 */
     article {
