@@ -1,7 +1,15 @@
 <a name="careers"></a>
 <section class="careers <%= shade ||= '' %> ">
     <h2>Open positions</h2>
-    <!-- <h3>Sales & Marketing</h3> -->
+    <h3>Sales & Marketing</h3>
+    <div class="card-layout">
+        <% link_to 'careers/business-development-representative' do %>
+            <div class="job-card">
+                <p class="job-title">Business Development Representative</p>
+                <p class="job-location">Oslo, Norway</p>
+            </div>
+        <% end %>
+    </div>
     <h3>Product</h3>
     <div class="card-layout">
         <% link_to 'careers/senior-web-developer' do %>
