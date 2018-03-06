@@ -1,7 +1,7 @@
 .smart-tools {
     h1 {
         @extend .h1;
-        margin-bottom: modular-scale(2);
+        margin-bottom: modular-scale(0);
     }
     h2 {
         @extend .section-heading;
@@ -13,6 +13,9 @@
         width: 2rem;
         margin-right: 1.5rem;
         margin-top: .5rem;
+    }
+    .ingress {
+        margin-bottom: modular-scale(4);
     }
     a {
         @extend .vibbio-primary-button;
@@ -57,6 +60,9 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .smart-tools .ingress {
+        text-align: left;
+    }
     .smart-tools .feature {
         flex-direction: column;
     }

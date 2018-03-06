@@ -1,5 +1,3 @@
-# Supercharge your content
+# Power up your marketing and communication
 
-VIBBIO is a full-service workflow for video projects.
-
-With our smart tool – planning and ordering videos has never been easier!
+VIBBIO is the platform where you can plan, order and receive publish ready videos tailored to your brand.

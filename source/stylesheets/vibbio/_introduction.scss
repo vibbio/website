@@ -1,0 +1,11 @@
+.introduction {
+    h2 {
+        @extend .h1;
+        margin-bottom: modular-scale(1);
+        max-width: 16em;
+    }
+    p {
+        @extend .ingress;
+        margin-bottom: modular-scale(0);
+    }
+}

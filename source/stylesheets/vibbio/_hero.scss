@@ -36,9 +36,6 @@
 .index .hero {
     background-image: $banner-gradient-overlay,
                       url(../images/hero/so-me.jpg);
-  p:last-of-type {
-    font-size: modular-scale(1);
-  }
 }
 .product .hero {
     background-image: $banner-gradient-overlay,
@@ -127,8 +124,5 @@
   }
   .hero p {
     font-size: modular-scale(1);
-  }
-  .index .hero p:last-of-type {
-    display: none;
   }
 }

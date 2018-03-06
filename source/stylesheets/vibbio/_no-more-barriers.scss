@@ -10,5 +10,9 @@
     p {
         @extend .ingress;
         color: $white;
+        margin-bottom: modular-scale(1);
+    }
+    p:last-child {
+        margin-bottom: 0;
     }
 }
