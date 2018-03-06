@@ -1,8 +1,10 @@
 .introduction {
     h2 {
-        @extend .h1;
+        @extend .h3;
+        font-weight: 400;
+        line-height: $base-line-height;
         margin-bottom: modular-scale(1);
-        max-width: 16em;
+        max-width: 30em;
     }
     p {
         @extend .ingress;
