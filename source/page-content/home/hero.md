@@ -1,1 +1,1 @@
-# Power-up your marketing and communication
+# Power-up your video communication
