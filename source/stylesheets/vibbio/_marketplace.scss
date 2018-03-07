@@ -25,6 +25,9 @@
         display: flex;
         margin: 0 2rem modular-scale(3) 2rem;
         max-width: 22em;
+        & div {
+            max-width: 18.5em;
+        }
     }
 }
 
