@@ -2,13 +2,49 @@
     background-color: $light-turquoise;
     h2 {
         @extend .h3;
+        color: $dark-petroleum;
         font-weight: 400;
+        letter-spacing: 0.05em;
         line-height: $base-line-height;
         margin-bottom: modular-scale(1);
         max-width: 30em;
+        text-transform: uppercase;
+
+        div {
+            color: $petroleum;
+            font-size: 1.7em;
+            font-weight: 700;
+        }
+    }
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     p {
-        @extend .ingress;
         margin-bottom: modular-scale(0);
+        max-width: 26em;
+        margin: 0 2rem;
+        min-width: 18em;
+        text-align: left;
+        width: calc(50% - 4rem);
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .introduction p {
+        max-width: 26em;
+        margin: 0;
+        min-width: 18em;
+        width: 100%;
+        &:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .introduction h2 div {
+        margin: .5rem 0;
     }
 }
