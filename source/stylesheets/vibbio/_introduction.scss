@@ -6,7 +6,7 @@
         font-weight: 400;
         letter-spacing: 0.05em;
         line-height: $base-line-height;
-        margin-bottom: modular-scale(1);
+        margin-bottom: modular-scale(3);
         max-width: 30em;
         text-transform: uppercase;
 
@@ -16,29 +16,36 @@
             font-weight: 700;
         }
     }
+    a {
+        @extend .vibbio-inverted-video-button;
+        text-shadow: none;
+    }
+
     .columns {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: modular-scale(4);
     }
     p {
-        margin-bottom: modular-scale(0);
-        max-width: 26em;
+        max-width: 24em;
         margin: 0 2rem;
-        min-width: 18em;
-        text-align: left;
-        width: calc(50% - 4rem);
+        min-width: 12em;
+        width: calc(33.3333% - 4rem);
     }
 }
 
 @media screen and (max-width: 935px) {
+    .introduction .columns {
+        flex-direction: column;
+    }
     .introduction p {
         max-width: 26em;
         margin: 0;
+        margin-bottom: 1rem;
         min-width: 18em;
         width: 100%;
-        &:first-child {
-            margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
