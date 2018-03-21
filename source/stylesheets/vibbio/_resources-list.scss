@@ -16,9 +16,17 @@ section.resources-list {
             width: 100%;
         }
     }
-    h2 {
-        font-size: modular-scale(1);
-        margin-top: modular-scale(1);
+    h2 a {
+        @extend .section-heading;
+        color: $petroleum;
+        font-size: modular-scale(-1);
+        letter-spacing: 0.02em;
+        margin-top: modular-scale(-1);
+        text-align: left;
+
+        &:hover {
+            color: $dark-petroleum;
+        }
     }
     p {
         @extend .measure;
@@ -46,7 +54,6 @@ section.resources-list {
     a {
         @extend .vibbio-bare-button;
         display: inline-block;
-        margin-top: modular-scale(1);
         padding: 0;
     }
 }
