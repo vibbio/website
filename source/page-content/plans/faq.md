@@ -8,7 +8,7 @@ Yes. Our content and video specialists are ready to help. You can easily order a
 </div>
 <div class="question">
 ### How long will it take before I get my video?
-Anywhere from 2-10 days, depending on your user plan. [Compare user plans here](plans#subscription_plans).
+We usually deliver the finished video within 1&ndash;2 days. Complex orders may occasionally take longer.
 </div>
 <div class="question">
 ### Can I get help with planning my video composition?
