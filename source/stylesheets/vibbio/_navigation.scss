@@ -14,16 +14,23 @@ nav.desktop {
   width: calc(100% - 4rem);
   z-index: 1;
 
-  ul {
+  ul.site-navigation {
     align-items: center;
     display: none;
     flex-grow: 2;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0 2rem;
+    & li {
+      padding-left: 1.5rem;
+      white-space: nowrap;
+      &:last-child {
+        display: flex;
+        flex-grow: 2;
+        justify-content: flex-end;
+      }
+    }
   }
-  li {
-    padding-left: 1.5rem;
-  }
+
   a {
     border: 1px solid transparent;
     color: $white;
@@ -40,6 +47,7 @@ nav.desktop {
     background-color: transparent;
     border: $base-border;
     border-color: transparentize($white, 0.5);
+    white-space: nowrap;
     &:hover {
       background-color: $white;
       color: $action-color;
@@ -64,7 +72,7 @@ nav.banner {
   transition: visibility $base-duration $base-timing 400ms,
               opacity 400ms $base-timing;
   visibility: hidden;
-  z-index: 100;
+  z-index: 10000000;
 
   nav ul {
     opacity: .4;
@@ -125,13 +133,14 @@ nav.mobile ul {
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 965px) {
 
   nav.desktop {
     margin: 2rem 4rem;
     width: calc(100% - 8rem);
 
-    ul {
+    ul.site-navigation,
+    ul.demo-link {
       display: flex;
 
       li a:hover {

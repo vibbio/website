@@ -3,14 +3,16 @@
       <%= image_tag 'vibbio_white.svg', :class => 'logo' %>
     <% end %>
 
-    <ul>
+    <ul class="site-navigation">
         <li><%= link_to 'Product', '/product' %></li>
         <li><%= link_to 'Plans', '/plans' %></li>
         <li><%= link_to 'Resources', '/resources' %></li>
         <li><%= link_to 'About', '/about' %></li>
+        <li><%= link_to 'Request a demo', 'mailto:sales@vibbio.com' %></li>
     </ul>
 
     <%= link_to 'Menu', '#', :class => 'menu-trigger' %>
+
     <%= link_to 'Log in', 'https://app.vibbio.com', :class => 'button' %>
 </nav>
 
@@ -23,6 +25,7 @@
             <li><%= link_to 'Plans', '/plans' %></li>
             <li><%= link_to 'Resources', 'resources' %></li>
             <li><%= link_to 'About', '/about' %></li>
+            <li><%= link_to 'Request a demo', 'mailto:sales@vibbio.com' %></li>
             <li><%= link_to 'Log in', 'https://app.vibbio.com' %></li>
         </ul>
     </nav>
