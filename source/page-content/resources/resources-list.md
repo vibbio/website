@@ -1,5 +1,7 @@
 <div class="resource">
 
+[![image](https://blog.vibbio.com/hs-fs/hubfs/DSC01144.jpg)](http://blog.vibbio.com/what-is-a-smart-video-and-how-to-create-it)
+
 ## [What is a smart video and how to create it?](http://blog.vibbio.com/what-is-a-smart-video-and-how-to-create-it)
 
 There’s no secret that there is an overload of videos on social media platforms today. Every business want to have their moment in the spotlight and put loads of effort into creating marketing videos with little or no success.

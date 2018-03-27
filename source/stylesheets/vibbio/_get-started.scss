@@ -8,6 +8,9 @@
     .wrapper {
         max-width: 78rem;
     }
+    a.button {
+        @extend .vibbio-primary-button;
+    }
 }
 
 @media screen and (max-width: 450px) {

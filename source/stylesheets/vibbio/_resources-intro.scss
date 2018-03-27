@@ -9,5 +9,9 @@
     }
     p:last-of-type {
         margin-bottom: 0;
+        width: auto;
+        a {
+            @extend .vibbio-primary-button;
+        }
     }
 }
