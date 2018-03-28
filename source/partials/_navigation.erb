@@ -4,11 +4,21 @@
     <% end %>
 
     <ul class="site-navigation">
-        <li><%= link_to 'Product', '/product' %></li>
-        <li><%= link_to 'Plans', '/plans' %></li>
-        <li><%= link_to 'Resources', '/resources' %></li>
-        <li><%= link_to 'About', '/about' %></li>
-        <li><%= link_to 'Request a demo', 'mailto:sales@vibbio.com' %></li>
+        <li class="<%= active_navigation("/product") %>">
+            <%= link_to 'Product', '/product' %>
+        </li>
+        <li class="<%= active_navigation("/plans") %>">
+            <%= link_to 'Plans', '/plans' %>
+        </li>
+        <li class="<%= active_navigation("/resources") %>">
+            <%= link_to 'Resources', '/resources' %>
+        </li>
+        <li class="<%= active_navigation("/about") %>">
+            <%= link_to 'About', '/about' %>
+        </li>
+        <li>
+            <%= link_to 'Request a demo', 'mailto:sales@vibbio.com' %>
+        </li>
     </ul>
 
     <%= link_to 'Menu', '#', :class => 'menu-trigger' %>

@@ -45,6 +45,9 @@ helpers do
   def emojify(content, **options)
     Twemoji.parse(h(content), options).html_safe if content.present?
   end
+  def active_navigation(page)
+    current_page.url.include?(page) ? "active" : ''
+  end
 end
 
 # helpers do

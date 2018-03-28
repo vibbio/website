@@ -29,6 +29,10 @@ nav.desktop {
         justify-content: flex-end;
       }
     }
+    li.active a {
+      border-bottom-color: $white;
+    }
+
   }
 
   a {
@@ -54,6 +58,7 @@ nav.desktop {
     }
   }
 }
+
 nav.banner {
   background: $banner-gradient;
   height: 80px;
