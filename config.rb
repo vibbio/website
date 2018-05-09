@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
-activate :directory_indexes
+# activate :directory_indexes
 
 set :relative_links, true
 set :markdown_engine, :kramdown
@@ -59,9 +59,9 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-configure :build do
-   activate :relative_assets
-   activate :minify_css
-   activate :imageoptim
+#configure :build do
+#   activate :relative_assets
+#   activate :minify_css
+#   activate :imageoptim
 #   activate :minify_javascript
-end
+#end
