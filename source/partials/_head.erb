@@ -18,6 +18,10 @@
 
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "VIBBIO" %></title>
+
+    <!-- Call all the scripts -->
+    <%= partial "partials/scripts" %>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli" rel="stylesheet">
     <%= stylesheet_link_tag 'vendor/lity.min.css', relative: true %>
     <%= stylesheet_link_tag 'site', relative: true %>
