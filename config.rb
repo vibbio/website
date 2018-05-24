@@ -59,9 +59,13 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-#configure :build do
+
+
+configure :build do
+    # do not ignore _headers file during build step
+    import_file File.expand_path("_headers", config[:source]), "/_headers"
 #   activate :relative_assets
 #   activate :minify_css
 #   activate :imageoptim
 #   activate :minify_javascript
-#end
+end
