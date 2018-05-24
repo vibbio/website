@@ -14,4 +14,4 @@
     # Don't load any resource type not explicitly enabled
     # Disable plugins like Flash or Silverlight
     # Send reports to report-uri.io
-    Content-Security-Policy: default-src 'self'; object-src 'none'; img-src *; style-src *; font-src fonts.googleapis.com; media-src video.vibbio.com; script-src 'self' *.hs-analytics.net js.usemessages.com js.hsleadflows.net js.hs-scripts.com *.licdn.com connect.facebook.com *.googletagmanager.com code.jquery.com px.ads.linkedin.com;
+    # Content-Security-Policy: default-src 'self'; object-src 'none'; img-src *; style-src *; font-src fonts.googleapis.com; media-src video.vibbio.com; script-src 'self' *.hs-analytics.net js.usemessages.com js.hsleadflows.net js.hs-scripts.com *.licdn.com connect.facebook.com *.googletagmanager.com code.jquery.com px.ads.linkedin.com;
