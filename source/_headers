@@ -1,0 +1,21 @@
+# All paths
+
+/*
+    # Block site from being framed with X-Frame-Options and CSP
+    Content-Security-Policy: frame-ancestors 'none'
+    X-Frame-Options: DENY
+
+    # Prevent browsers from incorrectly detecting non-scripts as scripts
+    X-Content-Type-Options: nosniff
+
+    # Force browsers to always go through HTTPS
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+    # Block pages from loading when they detect reflected XSS attacks
+    X-XSS-Protection: 1; mode=block
+
+    # Don't load any resource type not explicitly enabled
+    # Disable plugins like Flash or Silverlight
+    # Whitelist a ton of external scripts
+    # Send reports to report-uri.io
+    Content-Security-Policy: default-src 'none'; base-uri 'self'; frame-src video.vibbio.com; connect-src *.hubspot.com; form-action 'none'; object-src 'none'; img-src *; style-src 'self' 'unsafe-inline' d33wubrfki0l68.cloudfront.net fonts.googleapis.com video.vibbio.com 'sha256-8p8/8G9qAjfKb51gF4ojZZoTFxgBqMuxQAtI7sye+2M=' 'sha256-mnRyqew64Lcv5/Qgb/4HP8LfJi5MjjQCGLPt+/cJZis='; font-src *; media-src video.vibbio.com; script-src 'self' video.vibbio.com api.hubspot.com *.hs-analytics.net js.usemessages.com js.hsleadflows.net js.hs-scripts.com *.licdn.com connect.facebook.net *.googletagmanager.com google-analytics.com code.jquery.com px.ads.linkedin.com d33wubrfki0l68.cloudfront.net 'sha256-0IWtGnPZ5E08nwX7Lf/lJXvWb75LRyLB6ZREVPe45I0=' 'sha256-BTZcLPPmxifQjdiAPw1qdKk/DYzOtzmJEy4z6W2uyIc=' 'sha256-OezL7e41xIMw19UmuqMnNNfHTYFtb1gPzufSoVWhexU=' 'sha256-wET2UJJKfu/UMSa7dR6eeb5praZyDUvtJ7PYThdwl6c=' 'sha256-Zzv+LoOH+rHjoEId9ayfn15LPtie39VKWzU/RH1wBok=';
