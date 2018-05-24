@@ -5,6 +5,10 @@
     <%= partial "partials/navigation", :locals => {:background => 'banner'} %>
     <%= yield %>
     <%= partial "partials/footer" %>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3046634.js"></script>
+    <!-- End of HubSpot Embed Code -->
   </body>
 
   <%= javascript_include_tag 'site', relative: true %>
