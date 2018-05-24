@@ -1,31 +1,31 @@
 ---
-title: Privacy Policy on Cookie Usage
+title: Cookie policy
 ---
 
-# Privacy Policy on Cookie Usage
+# Cookie policy
 
-## About cookies
+### What are cookies?
 
 Cookies are very small text files that are stored on your computer when you visit some websites.
-
 We use cookies to help identify your computer so we can tailor your user experience and remember where you are in the order process.
+You can disable any cookies already stored on your computer, but these may stop our website or application from functioning properly.
 
-You can disable any cookies already stored on your computer, but these may stop our website from functioning properly.
+### Why we use cookies and similar technologies?
 
-## This website will
+**To make our site easy to use**
 
-- Remember your registered information and uploaded files
-- Remember where you are in the order process
-- Remember that you are logged in and that your session is secure. You need to be logged in to complete an order.
+If you select the “Remember me” function your username and password will be auto stored inside a cookie – To make it quicker for you to sign in whenever you access our application. Our third-party supplier Auth0 link our user accounts to the user id in Auth0.
 
-The following are not Strictly Necessary, but are required to provide you with the best user experience and also to tell us which pages you find most interesting (anonymously).
+**For security reasons**
 
-**We also include third party cookies:**
+To confirm whether you are logged into our service we use cookies to authenticate your identity.
 
-- To track the pages you visits via Google Analytics
-- From the Vimeo video player
-- To allow you to share pages with social networks such as Facebook
+**To provide you with personalized content**
 
-**This website will not:**
+We may personalize the content you see, by storing user preferences, such as default language in cookies. This also includes cookies generated to ensure that all surveys completed will disappear for selected users.
 
-- Share any personal information with third parties.
+We may also use collected information to personalize content on 3rd party sites and social networks such as Facebook, LinkedIn, Instagram and Google.
+
+**To improve our service**
+
+To helps us develop and improve our application and content displayed to our users, we use cookies that measure and analyze individual usage on our website and application, and track referral data. We may also display different version of functions and content to selected users.
