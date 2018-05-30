@@ -1,5 +1,6 @@
 .plans-include {
     @extend .how-does-it-work;
+    background-color: $light-turquoise;
     h2 {
         margin-bottom: modular-scale(1);
     }
