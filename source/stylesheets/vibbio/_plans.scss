@@ -5,19 +5,20 @@
         margin-bottom: modular-scale(1);
     }
     h3 {
-        @extend .section-heading
+        @extend .section-heading;
+        margin: modular-scale(4) 0 modular-scale(2);
     }
     em {
         opacity: .7;
     }
 
     .wrapper {
-        display: flex;
         align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         margin-bottom: modular-scale(4);
         width: 100%;
-        flex-wrap: wrap;
     }
     .standard-plan {
         background-color: $white;
@@ -29,6 +30,9 @@
         padding: 2.5rem 2rem;
         text-align: center;
         transform: scale(1.05);
+        h3 {
+            margin: 0.75em;
+        }
         .signup-button {
             @extend .vibbio-primary-button;
             margin-top: 2.5rem;
@@ -37,9 +41,6 @@
     .special-plans {
         margin: 0 2rem;
         padding: 2.5rem 2rem;
-        h3 {
-            margin: modular-scale(4) 0 modular-scale(2);
-        }
         li {
             text-align: center;
         }
@@ -77,6 +78,39 @@
             background-color: $turquoise;
             border: 1px solid $turquoise;
             color: $white;
+        }
+    }
+
+    .credits-overview {
+        margin-top: modular-scale(2);
+    }
+    .credits-table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: modular-scale(3);
+
+        table {
+            border-collapse: collapse;
+            margin: 0;
+        }
+        thead td {
+            @extend .section-heading;
+            color: $base-font-color;
+            opacity: 0.8;
+            padding: .5em 2.5em 1em;
+        }
+        tbody tr:nth-child(even) {
+            background-color: $light-turquoise;
+        }
+        tbody td {
+            padding: .5em 2.5em;
+            &:nth-child(even) {
+                font-weight: bold;
+            }
+            &:nth-child(odd) {
+                opacity: 0.8;
+            }
         }
     }
 }
