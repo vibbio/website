@@ -1,8 +1,8 @@
 .subscriptions {
-    padding-bottom: 0;
+    // background-color: $light-turquoise;
     h2 {
         @extend .h2;
-        margin-bottom: modular-scale(0);
+        margin-bottom: modular-scale(1);
     }
     h3 {
         @extend .section-heading
@@ -11,31 +11,6 @@
         opacity: .7;
     }
 
-    .billing-period {
-        display: flex;
-        justify-content: center;
-        margin-bottom: modular-scale(3);
-        width: 40%;
-
-        a {
-            @extend .section-heading;
-            border-bottom: 3px solid transparentize($dark-petroleum, 0.5);
-            cursor: pointer;
-            line-height: 2rem;
-            opacity: .5;
-            padding: 0 1rem;
-            text-decoration: none;
-            transition: all $base-duration $base-timing;
-        }
-        a:hover {
-            opacity: 1;
-        }
-        a.selected {
-            opacity: 1;
-            border-bottom: 3px solid $turquoise;
-
-        }
-    }
     .wrapper {
         display: flex;
         align-items: flex-start;
@@ -44,11 +19,30 @@
         width: 100%;
         flex-wrap: wrap;
     }
-    .plan {
+    .standard-plan {
+        background-color: $white;
         border-radius: $base-border-radius;
+        border: 1px solid transparentize($dark-petroleum, 0.7);
+        box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
         cursor: default;
+        margin: 0 2rem;
         padding: 2.5rem 2rem;
         text-align: center;
+        transform: scale(1.05);
+        .signup-button {
+            @extend .vibbio-primary-button;
+            margin-top: 2.5rem;
+        }
+    }
+    .special-plans {
+        margin: 0 2rem;
+        padding: 2.5rem 2rem;
+        h3 {
+            margin: modular-scale(4) 0 modular-scale(2);
+        }
+        li {
+            text-align: center;
+        }
     }
     .price {
         font-family: $heading-font-family;
@@ -73,65 +67,17 @@
     .valuta {
         font-size: modular-scale(-3);
     }
-    .signup-button {
+    .contact-button {
         @extend .vibbio-bare-button;
         border: 1px solid transparentize($anthracite, 0.7);
         color: $anthracite;
-        margin-top: 2.5rem;
+        margin: 2.5rem auto 0;
+        max-width: 50%;
         &:hover {
             background-color: $turquoise;
             border: 1px solid $turquoise;
             color: $white;
         }
     }
-    .multi {
-        background-color: $light-turquoise;
-        margin: modular-scale(4) -4rem 0;
-        padding: modular-scale(4) 4rem modular-scale(4);
-        width: 100vw;
-        h2 {
-            margin-bottom: modular-scale(1);
-        }
-        .wrapper {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
-        p, a {
-            @extend .measure;
-            padding-bottom: modular-scale(0);
-        }
-        img {
-            width: 4rem;
-            height: 4rem;
-            margin-right: 3rem;
-        }
-    }
 }
 
-.subscriptions .wrapper .plan:nth-child(2) {
-    margin: 0 2rem;
-    border: 1px solid transparentize($dark-petroleum, 0.7);
-    box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
-    transform: scale(1.05);
-    li {
-        font-weight: bold;
-        color: $anthracite;
-    }
-    .signup-button {
-        @extend .vibbio-primary-button;
-    }
-}
-
-@media screen and (max-width: 809px) {
-    .subscriptions .multi {
-        img {
-            display: none;
-        }
-        p:first-of-type, a {
-            display: block;
-            text-align: center;
-            width: 100%;
-        }
-    }
-}
