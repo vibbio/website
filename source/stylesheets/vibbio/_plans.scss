@@ -27,7 +27,7 @@
         box-shadow: 0 5px 20px rgba(186, 186, 186, .52);
         cursor: default;
         margin: 0 2rem;
-        padding: 2.5rem 3rem;
+        padding: 2.5rem 3rem 2rem;
         text-align: center;
         h3 {
             margin: 0.75em;
@@ -46,6 +46,10 @@
                 font-size: modular-scale(-1);
                 opacity: 0.8;
             }
+        }
+        p:last-of-type {
+            font-size: modular-scale(-1);
+            margin-top: modular-scale(2);
         }
     }
     .special-plans {
