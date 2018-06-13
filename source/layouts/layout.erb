@@ -8,10 +8,8 @@
     <%= partial "partials/navigation" %>
     <%= yield %>
     <%= partial "partials/footer" %>
+    <%= partial "partials/scripts" %>
 
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3046634.js"></script>
-    <!-- End of HubSpot Embed Code -->
   </body>
   <%= javascript_include_tag 'site', relative: true %>
   <%= javascript_include_tag 'https://code.jquery.com/jquery-3.3.1.min.js' %>
