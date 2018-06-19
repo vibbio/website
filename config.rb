@@ -63,7 +63,7 @@ end
 
 configure :build do
     # do not ignore _headers file during build step
-    import_file File.expand_path("_headers", config[:source]), "/_headers"
+    # import_file File.expand_path("_headers", config[:source]), "/_headers"
 #   activate :relative_assets
 #   activate :minify_css
 #   activate :imageoptim
