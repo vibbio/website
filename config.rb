@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
-# activate :directory_indexes
+activate :directory_indexes
 
 set :relative_links, true
 set :markdown_engine, :kramdown
