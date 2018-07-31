@@ -38,7 +38,7 @@ You are responsible for providing us with correct and updated contact informatio
 
 ### 3: Trial, cancellation and termination.
 
-3.1: VIBBIO offers a 14 days long trial subscription plan for free, with limited storage space and no monthly credits awarded. To order services in the trial subscription plan you will need to purchase additional credits. There is no time limitation on the trial subscription plan. After expiration of the trial period,VIBBIO can close the Platform to you without any notice, if no agreement on extending the use of the Platform has been finalized.
+3.1: VIBBIO offers a 14 days long trial subscription plan for free, with limited storage space and no monthly credits awarded. To order services in the trial subscription plan you will need to purchase additional credits.  After expiration of the trial period,VIBBIO can close the Platform to you without any notice, if no agreement on extending the use of the Platform has been finalized.
 
 3.2: You may terminate this Agreement at any time. You will be subject to payment of the monthly subscription fee for the duration of your current contract period.
 
