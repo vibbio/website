@@ -1,15 +1,16 @@
 .uvp {
+    padding: 0 4rem modular-scale(6) 4rem;
+
     h2 {
         @extend .h2;
+        font-weight: 400;
+        text-align: left;
     }
     img {
         max-width: 100%;
     }
-    p {
-    }
     .main-content {
         display: flex;
-        margin-top: modular-scale(4);
     }
     .text-wrapper {
         padding: modular-scale(3);
@@ -20,7 +21,11 @@
         border-radius: 2px;
         display: flex;
         justify-content: center;
-        max-width: 50%;
-        padding: modular-scale(2);
+        margin-right: -4rem;
+        max-width: 60%;
+        padding: modular-scale(4);
     }
+}
+.uvp:first-of-type {
+    padding-top: modular-scale(6);
 }
