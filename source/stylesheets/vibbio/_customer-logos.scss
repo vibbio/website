@@ -1,14 +1,14 @@
 .customer-logos {
-    padding: modular-scale(4) 0px;
-    background-color: $light-turquoise;
+    opacity: 0.8;
+    padding: modular-scale(4) 0 0 0;
     h2 {
         margin-bottom: modular-scale(4);
     }
     .logo-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
     li {
         display: flex;
