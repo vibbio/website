@@ -17,15 +17,24 @@
     }
 }
 .onboarding-sessions {
-    @extend .get-started;
+    @extend .marketplace;
     .wrapper {
+        display: block;
         max-width: 78rem;
+    }
+    .area,
+    .area ul,
+    .area div {
+        max-width: 100%;
     }
     ul {
         @extend .bullet-list;
     }
     p {
-        margin: 0;
+        @extend .ingress;
+        margin: 0 0 modular-scale(0) 0;
+        max-width: 100%;
+        text-align: left;
     }
     em {
         font-size: modular-scale(-1);
