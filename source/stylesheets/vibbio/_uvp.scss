@@ -9,8 +9,13 @@
     img {
         max-width: 100%;
     }
+    p {
+        max-width: 23em;
+    }
     .main-content {
         display: flex;
+        justify-content: space-between;
+        max-width: 1280px;
     }
     .text-wrapper {
         padding: modular-scale(3);
@@ -18,11 +23,11 @@
     .illus {
         align-items: center;
         background-color: $light-turquoise;
-        border-radius: 2px;
+        border-radius: 1rem;
         display: flex;
         justify-content: center;
-        margin-right: -4rem;
-        max-width: 60%;
+        /* margin-right: -4rem; */
+        max-width: 50%;
         padding: modular-scale(4);
     }
 }
