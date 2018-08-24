@@ -1,0 +1,26 @@
+.uvp {
+    h2 {
+        @extend .h2;
+    }
+    img {
+        max-width: 100%;
+    }
+    p {
+    }
+    .main-content {
+        display: flex;
+        margin-top: modular-scale(4);
+    }
+    .text-wrapper {
+        padding: modular-scale(3);
+    }
+    .illus {
+        align-items: center;
+        background-color: $light-turquoise;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+        padding: modular-scale(2);
+    }
+}
