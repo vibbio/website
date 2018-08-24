@@ -11,6 +11,7 @@ h1, .h1 {
 }
 .h2 {
     font-size: modular-scale(3);
+    font-weight: $base-font-weight;
     color: $dark-petroleum;
     text-align: center;
 }
@@ -20,6 +21,7 @@ h2 {
 }
 h3, .h3 {
     font-size: modular-scale(1);
+    font-weight: $base-font-weight;
     color: $petroleum;
 }
 strong {
