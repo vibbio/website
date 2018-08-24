@@ -1,5 +1,10 @@
 .video-examples {
 
+    canvas {
+        position: absolute;
+        left: 0;
+        z-index: 0;
+    }
     h2 {
         @extend .h2;
         margin-bottom: modular-scale(2);
