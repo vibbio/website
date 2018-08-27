@@ -1,5 +1,5 @@
 .uvp {
-    padding: 0 4rem modular-scale(6) 4rem;
+    padding: 0 2rem modular-scale(6) 2rem;
 
     h2 {
         @extend .h2;
@@ -7,7 +7,8 @@
         text-align: left;
     }
     img {
-        width: 650px;
+        max-width: 650px;
+        width: 100%;
     }
     p {
         width: 23em;
@@ -21,8 +22,11 @@
         width: 100%;
     }
     .text-wrapper {
-        flex-shrink: 0;
-        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        max-width: 23rem;
+        width: 100%;
         & > * {
             display: inline-block;
         }
@@ -33,8 +37,7 @@
         border-radius: 1rem;
         display: flex;
         justify-content: center;
-        margin-left: modular-scale(2);
-        max-width: 50%;
+        max-width: 49%;
         padding: modular-scale(1);
     }
 }
@@ -43,8 +46,40 @@
 }
 .uvp:nth-of-type(2n) .main-content {
     flex-direction: row-reverse;
-    & .illus {
-        margin-right: modular-scale(2);
-        margin-left: 0;
+    & .text-wrapper {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .uvp .text-wrapper,
+    .uvp:nth-of-type(2n) .text-wrapper {
+        max-width: 100%;
+
+        & > p {
+            width: 100%;
+        }
+    }
+    .uvp .illus,
+    .uvp:nth-of-type(2n) .illus {
+        display: none;
+    }
+}
+@media screen and (max-width: 955px) {
+    .uvp .main-content,
+    .uvp:nth-of-type(2n) .main-content {
+        flex-direction: column;
+
+        & > * {
+            max-width: 100%;
+            width: 100%;
+        }
+        & > .text-wrapper {
+            margin: 0;
+        }
+        & > .illus {
+            margin-top: modular-scale(2);
+        }
     }
 }
