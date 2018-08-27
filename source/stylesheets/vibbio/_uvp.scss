@@ -35,3 +35,6 @@
 .uvp:first-of-type {
     padding-top: modular-scale(6);
 }
+.uvp:nth-of-type(2n) .main-content {
+    flex-direction: row-reverse;
+}
