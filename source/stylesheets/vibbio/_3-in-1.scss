@@ -1,0 +1,28 @@
+.three-in-one {
+
+    h2 {
+        @extend .h2;
+    }
+    h3 {
+        @extend .section-heading;
+    }
+    img {
+        height: 4rem;
+        margin: 1rem 0;
+    }
+    .pillar-wrapper {
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+    }
+    .pillar {
+        align-items: center;
+        // background-color: $light-turquoise;
+        // border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 1rem;
+        width: 18rem;
+    }
+}
