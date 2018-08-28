@@ -1,6 +1,8 @@
 .customer-logos {
-    opacity: 0.8;
-    padding: modular-scale(2) 0 0 0;
+    background-color: $white;
+    margin-top: -3px;
+    padding: modular-scale(0) 0 0 0;
+    z-index: 2;
     h2 {
         margin-bottom: modular-scale(4);
     }
@@ -8,6 +10,7 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        opacity: 0.8;
         overflow: hidden;
     }
     li {
