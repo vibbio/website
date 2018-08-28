@@ -53,6 +53,12 @@
 }
 
 @media screen and (max-width: 415px) {
+    .uvp {
+        padding-bottom: modular-scale(2);
+    }
+    .uvp:first-of-type {
+        padding-top: modular-scale(2);
+    }
     .uvp .text-wrapper,
     .uvp:nth-of-type(2n) .text-wrapper {
         max-width: 100%;
