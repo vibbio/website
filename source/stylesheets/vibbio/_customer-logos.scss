@@ -1,7 +1,9 @@
 .customer-logos {
     background-color: $white;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.2);
     margin-top: -3px;
-    padding: modular-scale(0) 0 0 0;
+    overflow: hidden;
+    padding: modular-scale(0) 0;
     z-index: 2;
     h2 {
         margin-bottom: modular-scale(4);

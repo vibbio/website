@@ -37,6 +37,7 @@
 
 .index .hero {
     background-image: $banner-gradient;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) inset, 0 2px 4px rgba(0,0,0,0.12) inset;
     height: auto;
     justify-content: space-between;
     overflow: hidden;
