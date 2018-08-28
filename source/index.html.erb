@@ -1,8 +1,9 @@
 ---
-title: VIBBIO is video
+title: VIBBIO – The Video Creation Platform
 ---
 
 <div class="hero">
+
     <h1>The Video Creation Platform</h1>
 
     <a href="https://video.vibbio.com/v.ihtml/player.html?token=1442d495883137455b685a1f2623b713&source=embed&photo%5fid=27066422&autoPlay=1" data-lity rel="nofollow">
@@ -10,12 +11,32 @@ title: VIBBIO is video
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
         </svg>
-     Watch the introduction video</a>
+        Watch the introduction video
+    </a>
+
+    <div class="pillar-wrapper">
+        <div class="pillar">
+            <h2>Video projects</h2>
+            <%= image_tag 'icons/moviecut.svg' %>
+        </div>
+        <div class="pillar">
+            <h2>Cloud library</h2>
+            <%= image_tag 'icons/foldercloud.svg' %>
+        </div>
+        <div class="pillar">
+            <h2>Marketplace</h2>
+            <%= image_tag 'icons/localstore.svg' %>
+        </div>
+    </div>
+
+<!--
     <div class="half-circle"><%= image_tag 'ic_arrow_down_white.svg' %></div>
     <div class="half-circle"><%= image_tag 'ic_arrow_down_white.svg' %></div>
+ -->
 </div>
 
-<%= partial 'partials/introduction' %>
-<%= partial 'partials/smart-tools' %>
 <%= partial 'partials/customer-logos' %>
+<%= partial 'partials/uvp-1' %>
+<%= partial 'partials/uvp-2' %>
+<%= partial 'partials/uvp-3' %>
 <%= partial 'partials/video-examples', :locals => { :button_text => 'Learn how to get started', :link_url => 'product#get-started'} %>
