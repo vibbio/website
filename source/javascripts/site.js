@@ -13,15 +13,15 @@ closeButton.onclick = function() {
     toggleMenu();
 }
 
-var canvasWidth = document.getElementById('videoExamples').offsetWidth;
-var canvasHeight = document.getElementById('videoExamples').offsetHeight;
+var canvasWidth = document.getElementById('heroSection').offsetWidth;
+var canvasHeight = document.getElementById('heroSection').offsetHeight;
 
 var confettiSettings = {
         target: 'my-canvas',
-        max: '30',
+        max: '80',
         animate: false,
-        props: ["circle","square","line"],
-        colors: [[63,207,213],[35,55,70],[0,131,155],[0,88,111]],
+        props: ["circle","square","triangle"],
+        colors: [[255,255,255],[63,207,213],[35,55,70],[0,131,155],[0,88,111]],
         clock: '25',
         width: canvasWidth,
         height: canvasHeight
