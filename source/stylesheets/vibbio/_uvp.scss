@@ -24,7 +24,7 @@
     .text-wrapper {
         display: flex;
         flex-direction: column;
-        margin-right: 2rem;
+        margin: 0 2rem;
         max-width: 23rem;
         width: 100%;
         & > * {
@@ -37,7 +37,7 @@
         border-radius: 1rem;
         display: flex;
         justify-content: center;
-        max-width: 49%;
+        max-width: calc(50% - 4rem);
         padding: modular-scale(1);
     }
 }
@@ -46,10 +46,6 @@
 }
 .uvp:nth-of-type(2n) .main-content {
     flex-direction: row-reverse;
-    & .text-wrapper {
-        margin-right: 0;
-        margin-left: 2rem;
-    }
 }
 
 @media screen and (max-width: 415px) {
