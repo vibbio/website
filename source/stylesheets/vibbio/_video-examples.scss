@@ -1,4 +1,6 @@
 .video-examples {
+    padding: modular-scale(6) 2rem modular-scale(6) 2rem;
+
     h2 {
         @extend .h2;
         margin-bottom: modular-scale(2);
@@ -50,5 +52,11 @@
         &:hover {
             background-color: $petroleum;
         }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .video-examples h2 {
+        text-align: left;
     }
 }
