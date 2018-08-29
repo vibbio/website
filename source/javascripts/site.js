@@ -19,10 +19,10 @@ var canvasHeight = document.getElementById('heroSection').offsetHeight;
 var confettiSettings = {
         target: 'my-canvas',
         max: '80',
-        animate: false,
+        animate: true,
         props: ["circle","square","triangle"],
         colors: [[255,255,255],[63,207,213],[35,55,70],[0,131,155],[0,88,111]],
-        clock: '25',
+        clock: '2',
         width: canvasWidth,
         height: canvasHeight
 };
