@@ -1,6 +1,7 @@
 .customer-logos {
     background-color: $white;
     box-shadow: 0 0 4px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.2);
+    display: flex;
     margin-top: -3px;
     overflow: hidden;
     padding: modular-scale(0) 0;
@@ -11,10 +12,13 @@
     .logo-list {
         align-items: center;
         display: flex;
+        flex-shrink: 0;
         justify-content: center;
         opacity: 0.8;
         overflow: hidden;
+        animation: slide 400s linear infinite;
     }
+
     li {
         display: flex;
         align-items: center;
@@ -47,5 +51,25 @@
         &#SopraSteria {
             height: 1.1rem;
         }
+    }
+}
+@media screen and (min-width: 1600px) {
+    .customer-logos {
+        justify-content: center;
+    }
+    .logo-list {
+        animation: none;
+    }
+    .logo-list:nth-of-type(2n) {
+        display: none;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translate3d(-100%,0,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
     }
 }
