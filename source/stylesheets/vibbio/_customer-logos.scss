@@ -32,11 +32,20 @@
         &:hover {
             opacity: .7;
         }
-        &#Adecco, &#Visma, &#Microsoft {
+        &#Visma {
             height: 1.3rem;
         }
-        &#Tripletex, &#Orkla {
+        &#Orkla {
             margin-top: -.5rem;
+        }
+        &#Scandic {
+            height: 175%;
+        }
+        &#PierreRobert {
+            height: 1.5rem;
+        }
+        &#SopraSteria {
+            height: 1.1rem;
         }
     }
 }
