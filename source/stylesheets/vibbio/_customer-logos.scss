@@ -56,12 +56,12 @@
 @media screen and (min-width: 1600px) {
     .customer-logos {
         justify-content: center;
-    }
-    .logo-list {
-        animation: none;
-    }
-    .logo-list:nth-of-type(2n) {
-        display: none;
+        & .logo-list {
+            animation: none;
+        }
+        & .logo-list:nth-of-type(2n) {
+            display: none;
+        }
     }
 }
 
