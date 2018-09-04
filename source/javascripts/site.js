@@ -20,7 +20,13 @@ var confettiSettings = {
         target: 'my-canvas',
         max: '80',
         animate: true,
-        props: ["circle","square","triangle"],
+        props: [
+            "circle",
+            "square",
+            "triangle",
+            { "type": "svg", "src": "/images/vibbio-symbol-outline.svg", "rotate": true, "size": 30, "weight": 0.2 },
+            { "type": "svg", "src": "/images/unicorn.svg", "rotate": true, "size": 50, "weight": 0.1 }
+        ],
         colors: [[255,255,255],[63,207,213],[35,55,70],[0,131,155],[0,88,111]],
         clock: '2',
         width: canvasWidth,
