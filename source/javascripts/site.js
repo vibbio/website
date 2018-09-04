@@ -24,7 +24,7 @@ var confettiSettings = {
             "circle",
             "square",
             "triangle",
-            { "type": "svg", "src": "/images/vibbio-symbol-outline.svg", "rotate": true, "size": 30, "weight": 0.2 },
+            { "type": "svg", "src": "/images/vibbio-symbol-outline-light.svg", "rotate": true, "size": 30, "weight": 0.2 },
             { "type": "svg", "src": "/images/unicorn.svg", "rotate": true, "size": 30, "weight": 0.005 }
         ],
         colors: [[255,255,255],[63,207,213],[35,55,70],[0,131,155],[0,88,111]],
